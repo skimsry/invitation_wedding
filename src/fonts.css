@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'KhmerOSMuolLight';
+  src: url('./assets/fonts/KhmerOSmuollight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Moulpali';
+  src: url('./assets/fonts/Moulpali-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Khmer OS Battambang';
+  src: url('./assets/fonts/KhmerOSbattambang.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-kh{
+    font-family: 'KhmerOSMuolLight';
+}
+
+.font-moulpali{
+    font-family: 'Moulpali';
+}
+
+.font-battambang{
+    font-family: 'Khmer OS Battambang';
+}

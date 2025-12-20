@@ -1,0 +1,231 @@
+import bgwelcomespouse from "../assets/bgwelcome_spouse.png";
+import bgwelcomeMobile from "../assets/mobile_bg.png"; 
+import { useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import gb from "../assets/gb.png";
+import Bubbles from "../components/Bubbles";
+
+
+export default function WelcomeSpouse() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    let touchStartY = 0;
+
+    const handleWheel = (e) => {
+      if (e.deltaY > 50) {
+        // scroll down
+        navigate("/welcomeparent");
+      } else if (e.deltaY < -50) {
+        // scroll up
+        navigate("/"); // change this to your desired route
+      }
+    };
+
+    const handleTouchStart = (e) => {
+      touchStartY = e.touches[0].clientY;
+    };
+
+    const handleTouchEnd = (e) => {
+      const touchEndY = e.changedTouches[0].clientY;
+      if (touchStartY - touchEndY > 50) {
+        // swipe up
+        navigate("/welcomeparent");
+      } else if (touchEndY - touchStartY > 50) {
+        // swipe down
+        navigate("/"); // change this to your desired route
+      }
+    };
+
+    window.addEventListener("wheel", handleWheel, { passive: true });
+    window.addEventListener("touchstart", handleTouchStart, { passive: true });
+    window.addEventListener("touchend", handleTouchEnd, { passive: true });
+
+    return () => {
+      window.removeEventListener("wheel", handleWheel);
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchend", handleTouchEnd);
+    };
+  }, [navigate]);
+  return (
+    <div      
+      className="
+        relative w-full min-h-[100dvh]
+        bg-[image:var(--bg-mobile)] md:bg-[image:var(--bg-desktop)]
+        bg-cover bg-center bg-no-repeat
+        flex flex-col items-center justify-center
+        text-center p-6 sm:p-12
+        animate-fadeIn overflow-hidden
+      "
+      style={{
+        "--bg-mobile": `url(${bgwelcomeMobile})`,
+        "--bg-desktop": `url(${bgwelcomespouse})`,
+      }}
+    >
+       <Bubbles />
+      <div className="absolute inset-0 bg-black/30 z-0"></div>
+      
+      <div className="relative z-10 flex flex-col items-center w-full">
+        
+       
+<div className="w-full grid grid-cols-1 md:grid-cols-2">
+  <div className="text-center animate-fade-in-up">
+  <h2 className="animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-green-900 sm:text-[#d5c243] md:text-[#d5c243] drop-shadow-lg mb-4 lg:mb-12 md:mb-12 leading-tight font-kh sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+  សិរីមង្គលអាពាហ៍ពិពាហ៍
+  </h2>
+  
+{/* <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6 sm:mb-10 sm:px-4 md:mb-10 md:px-4 mb-2 px-2">
+
+  
+  <div className="text-center animate-fade-in-up">
+    <h3 className="text-lg md:text-xl font-kh text-green-900 mb-2 sm:text-[#d5c243] md:text-[#d5c243] drop-shadow-lg sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+      កូនប្រុសនាម
+    </h3>
+    <p className="text-lg md:text-xl font-kh text-green-800 leading-relaxed sm:text-[#e7d996] md:text-[#e7d996] drop-shadow-lg mb-2 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+      សន      
+    </p>
+    <p className="text-lg md:text-xl font-kh text-green-800 leading-relaxed sm:text-[#e7d996] md:text-[#e7d996] drop-shadow-lg mb-1 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+      គឹមស្រ៊ី
+    </p>
+  </div>
+
+ 
+  <div className="text-center animate-fade-in-up">
+    <h3 className="text-lg md:text-xl font-kh text-green-900 mb-2 sm:text-[#d5c243] md:text-[#d5c243] drop-shadow-lg sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+      កូនស្រីនាម
+    </h3>
+    <p className="text-lg md:text-xl font-kh text-green-800 leading-relaxed sm:text-[#e7d996] md:text-[#e7d996] drop-shadow-lg mb-2 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+      វុទ្ធី
+      
+    </p>
+    <p className="text-lg md:text-xl font-kh text-green-800 leading-relaxed sm:text-[#e7d996] md:text-[#e7d996] drop-shadow-lg mb-1 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+      
+      សុធារ័ត្ឋ
+    </p>
+  </div>
+
+</div> */}
+<div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-5 gap-6 sm:mb-10 sm:px-4 md:mb-10 md:px-4 mb-2 px-2">
+
+  {/* Left Div */}
+  <div className="col-span-2 text-center animate-fade-in-up">
+    <h3 className="text-lg md:text-xl font-kh text-green-900 mb-2 sm:mb-4 md:mb-4 sm:text-[#d5c243] md:text-[#d5c243] drop-shadow-lg sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+      កូនប្រុសនាម
+    </h3>
+    {/* <p className="text-lg md:text-xl font-kh text-green-800 leading-relaxed sm:text-[#e7d996] md:text-[#e7d996] drop-shadow-lg mb-2 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+      សន      
+    </p>
+    <p className="text-lg md:text-xl font-kh text-green-800 leading-relaxed sm:text-[#e7d996] md:text-[#e7d996] drop-shadow-lg mb-1 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+      គឹមស្រ៊ី
+    </p> */}
+    {/* Mobile only */}
+<p className="text-lg font-kh text-green-800 leading-relaxed drop-shadow-lg mb-2 md:hidden">
+  សន គឹមស្រ៊ី
+</p>
+
+{/* Tablet / Desktop only */}
+<div className="hidden md:block">
+  <p className="text-lg md:text-xl font-kh text-green-800 leading-relaxed sm:text-[#e7d996] md:text-[#e7d996] drop-shadow-lg mb-2 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+    សន
+  </p>
+  <p className="text-lg md:text-xl font-kh text-green-800 leading-relaxed sm:text-[#e7d996] md:text-[#e7d996] drop-shadow-lg mb-1 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+    គឹមស្រ៊ី
+  </p>
+</div>
+  </div>
+
+  {/* Middle Div (Smaller) */}
+  <div className="hidden lg:block col-span-1 text-center animate-fade-in-up">
+  <img src={gb} alt="ring" className="animate-fade-in-up hover:scale-105 mb-1"/>
+</div>
+
+  {/* Right Div */}
+  <div className="col-span-2 text-center animate-fade-in-up">
+    <h3 className="text-lg md:text-xl font-kh text-green-900 sm:mb-4 md:mb-4 mb-2 sm:text-[#d5c243] md:text-[#d5c243] drop-shadow-lg sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+      កូនស្រីនាម
+    </h3>
+    {/* Mobile only */}
+<p className="text-lg font-kh text-green-800 leading-relaxed drop-shadow-lg mb-2 md:hidden">
+  វុទ្ធី សុធារ័ត្ឋ
+</p>
+
+{/* Tablet / Desktop only */}
+<div className="hidden md:block">
+  <p className="text-lg md:text-xl font-kh text-green-800 leading-relaxed sm:text-[#e7d996] md:text-[#e7d996] drop-shadow-lg mb-2 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+    វុទ្ធី
+  </p>
+  <p className="text-lg md:text-xl font-kh text-green-800 leading-relaxed sm:text-[#e7d996] md:text-[#e7d996] drop-shadow-lg mb-1 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+    សុធារ័ត្ឋ
+  </p>
+</div>
+  </div>
+
+</div>
+ <p className="font-battambang text-green-900 sm:text-white md:text-white leading-relaxed drop-shadow-lg mb-2 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] shadow-white/80">
+      ដែលប្រព្រឹត្តទៅ
+    </p>
+<p className="animate-fade-in-up text-xl sm:text-2lg md:text-2xl   text-green-900 sm:text-white md:text-white sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] sm:mb-4 sm:px-4 md:mb-4 md:px-4 leading-relaxed font-kh">
+          ថ្ងៃសៅរ៍ ទី២១ ខែកុម្ភៈ ឆ្នាំ២០២៦
+        </p>
+        <p className="font-battambang text-green-900 sm:text-white md:text-white leading-relaxed drop-shadow-lg mb-2 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] shadow-white/80">
+      ចាប់ពីម៉ោង៥ ល្ងាច
+    </p>
+  <p className="font-battambang text-green-900 sm:text-white md:text-white leading-relaxed drop-shadow-lg mb-8 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] shadow-white/80">
+      នៅគេហដ្ឋានខាងស្រី ស្រុកកោះធំ (ស្ពានទី៤៦ ក្បែរវត្តតាដួង)
+    </p>
+  <div className="pb-8 flex justify-center">
+  <a
+    href="https://maps.app.goo.gl/fko6nLHnfZ8P1it86"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="
+      px-4 py-3
+      bg-white text-green-900 
+      text-sm sm:text-base font-bold uppercase tracking-wider
+      rounded-full shadow-xl 
+      hover:scale-105 hover:bg-gray-100 hover:shadow-2xl 
+      transition-all duration-300 ease-out font-battambang animate-bounce
+      flex items-center justify-center gap-2
+      max-w-[280px]
+    "
+  >
+    ផែនទី គេហដ្ឋានខាងកូនស្រី
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 232597 333333"
+      className="w-5 h-5"
+      fill="currentColor"
+    >
+      <path d="M151444 5419C140355 1916 128560 0 116311 0 80573 0 48591 16155 27269 41534l54942 46222 69232-82338z" fill="#1a73e8"/>
+      <path d="M27244 41534C10257 61747 0 87832 0 116286c0 21876 4360 39594 11517 55472l70669-84002-54942-46222z" fill="#ea4335"/>
+      <path d="M116311 71828c24573 0 44483 19910 44483 44483 0 10938-3957 20969-10509 28706 0 0 35133-41786 69232-82313-14089-27093-38510-47936-68048-57286L82186 87756c8166-9753 20415-15928 34125-15928z" fill="#4285f4"/>
+      <path d="M116311 160769c-24573 0-44483-19910-44483-44483 0-10863 3906-20818 10358-28555l-70669 84027c12072 26791 32159 48289 52851 75381l85891-102122c-8141 9628-20339 15752-33948 15752z" fill="#fbbc04"/>
+      <path d="M148571 275014c38787-60663 84026-88210 84026-158728 0-19331-4738-37552-13080-53581L64393 247140c6578 8620 13206 17793 19683 27900 23590 36444 17037 58294 32260 58294 15172 0 8644-21876 32235-58320z" fill="#34a853"/>
+    </svg>
+  </a>
+</div>
+
+
+  <Link
+          to="/welcomeparent"
+          className="
+            px-8 py-3 
+            bg-white text-green-900 
+            text-sm sm:text-base font-bold uppercase tracking-wider
+            rounded-full shadow-xl 
+            hover:scale-105 hover:bg-gray-100 hover:shadow-2xl 
+            transition-all duration-300 ease-out font-battambang animate-bounce
+          "
+        >
+          បើកទំព័របន្ទាប់ 
+        </Link>
+  </div>
+</div>
+
+        
+      </div>
+     
+      
+    </div>
+  );
+}

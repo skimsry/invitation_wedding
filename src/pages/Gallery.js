@@ -1,0 +1,213 @@
+import { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
+import Bubbles from "../components/Bubbles";
+import img1 from '../assets/gallery/1.png';
+import img2 from '../assets/gallery/2.JPG';
+import img3 from '../assets/gallery/3.JPG';
+import img4 from '../assets/gallery/4.JPG';
+import img5 from '../assets/gallery/5.JPG';
+import img6 from '../assets/gallery/6.JPG';
+import img7 from '../assets/gallery/7.JPG';
+import img8 from '../assets/gallery/8.JPG';
+import img9 from '../assets/gallery/9.JPG';
+import img10 from '../assets/gallery/10.JPG';
+import img11 from '../assets/gallery/11.JPG';
+import img12 from '../assets/gallery/12.JPG';
+import img13 from '../assets/gallery/13.JPG';
+import img14 from '../assets/gallery/14.JPG';
+import img15 from '../assets/gallery/15.JPG';
+import img16 from '../assets/gallery/16.JPG';
+import img17 from '../assets/gallery/17.JPG';
+import img18 from '../assets/gallery/18.JPG';
+import img19 from '../assets/gallery/19.JPG';
+import img20 from '../assets/gallery/20.JPG';
+import img21 from '../assets/gallery/21.JPG';
+export default function Gallery() {
+  const [selectedIndex, setSelectedIndex] = useState(null);
+  const [direction, setDirection] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [fadeKey, setFadeKey] = useState(0);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
+
+  const images = [
+    img1,img2,img3,img13,img4,img9,img5,img6,img7,img8,img10,img14,img11,img12,img16,img17,img15,img18,img20,img19,img21,
+    
+  ];
+
+  const openImage = (index) => setSelectedIndex(index);
+  const closePopup = () => setSelectedIndex(null);
+
+  const changeImage = (newIndex, dir) => {
+    if (isAnimating) return;
+    setDirection(dir);
+    setIsAnimating(true);
+    setFadeKey((prev) => prev + 1);
+    setTimeout(() => {
+      setSelectedIndex(newIndex);
+      setIsAnimating(false);
+    }, 300);
+  };
+
+  const prevImage = () => {
+    const newIndex = selectedIndex === 0 ? images.length - 1 : selectedIndex - 1;
+    changeImage(newIndex, -1);
+  };
+
+  const nextImage = () => {
+    const newIndex = selectedIndex === images.length - 1 ? 0 : selectedIndex + 1;
+    changeImage(newIndex, 1);
+  };
+
+  // Touch handlers for swipe
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    const deltaX = touchEndX.current - touchStartX.current;
+    if (deltaX > 50) prevImage();
+    else if (deltaX < -50) nextImage();
+  };
+
+  // Keyboard navigation
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (selectedIndex !== null) {
+        if (e.key === "Escape") closePopup();
+        if (e.key === "ArrowLeft") prevImage();
+        if (e.key === "ArrowRight") nextImage();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedIndex]);
+
+  return (
+    <div className="relative w-full min-h-[100dvh] bg-green-900 flex flex-col items-center justify-center text-center p-6 sm:p-12 animate-fadeIn overflow-hidden">
+      <Bubbles />
+      {/* Blur only on desktop */}
+      <div className="hidden md:block absolute inset-0 backdrop-blur-sm bg-white/5 z-0"></div>
+      <div className="absolute inset-0 bg-black/30 z-0"></div>
+
+      <div className="relative z-10 flex flex-col items-center w-full">
+        {/* Titles */}
+        <h2 className="animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-[#d5c243] drop-shadow-lg mb-8 lg:mb-12 md:mb-12 leading-tight font-kh">
+          សិរីមង្គលអាពាហ៍ពិពាហ៍
+        </h2>
+        <h1 className="animate-fade-in-up text-3xl sm:text-3xl md:text-4xl lg:text-6xl text-[#d5c243] drop-shadow-lg mb-8 sm:mb-12 md:mb-12 lg:mb-12 leading-tight font-moulpali">
+          វិចិត្រសាល
+        </h1>
+
+        {/* Gallery */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8 sm:mb-12 md:mb-12 lg:mb-12">
+          {images.map((src, index) => (
+            <div key={index}>
+              <img
+                className="h-auto max-w-full rounded-xl border-2 border-gray-300 cursor-pointer hover:scale-105 transition-transform"
+                src={src}
+                alt={`Gallery ${index + 1}`}
+                onClick={() => openImage(index)}
+              />
+            </div>
+          ))}
+        </div>
+
+        {/* Link */}
+        <div className="flex gap-4">
+  <Link
+    to="/list"
+    className="px-8 py-3 bg-white text-green-900 text-sm sm:text-base font-bold uppercase tracking-wider rounded-full shadow-xl hover:scale-105 hover:bg-gray-100 hover:shadow-2xl transition-all duration-300 ease-out font-battambang"
+  >
+    ត្រឡប់ក្រោយ
+  </Link>
+  <Link
+    to="/prewedding"
+    className="px-8 py-3 bg-white text-green-900 text-sm sm:text-base font-bold uppercase tracking-wider rounded-full shadow-xl hover:scale-105 hover:bg-gray-100 hover:shadow-2xl transition-all duration-300 ease-out font-battambang animate-bounce"
+  >
+    ទស្សនាវីដេអូ
+  </Link>
+</div>
+
+      </div>
+
+      {/* Fullscreen Popup */}
+      {selectedIndex !== null && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center overflow-hidden">
+          {/* Background overlay */}
+          <div
+            className="absolute inset-0 bg-black/90"
+            onClick={closePopup}
+          ></div>
+
+          {/* Image + buttons container */}
+          <div
+            className="relative z-50 flex items-center justify-center"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+          >
+            {/* Prev button */}
+            <button
+              className="absolute left-5 text-white text-4xl font-bold hover:text-gray-300 z-50"
+              onClick={(e) => {
+                e.stopPropagation();
+                prevImage();
+              }}
+              onTouchStart={(e) => e.stopPropagation()}
+              onTouchEnd={(e) => e.stopPropagation()}
+            >
+              ‹
+            </button>
+
+            {/* Close button */}
+            <button
+              className="absolute top-5 right-5 text-white text-4xl font-bold hover:text-gray-300 z-50"
+              onClick={(e) => {
+                e.stopPropagation();
+                closePopup();
+              }}
+              onTouchStart={(e) => e.stopPropagation()}
+              onTouchEnd={(e) => e.stopPropagation()}
+            >
+              ×
+            </button>
+
+            {/* Image */}
+            <div
+              key={fadeKey}
+              className={`transition-all duration-300 ease-out`}
+              style={{
+                transform: isAnimating ? `translateX(${direction * 100}%)` : "translateX(0%)",
+                opacity: isAnimating ? 0 : 1,
+              }}
+            >
+              <img
+                src={images[selectedIndex]}
+                alt="Fullscreen"
+                className="max-h-[90vh] max-w-[90vw] rounded-xl shadow-2xl"
+              />
+            </div>
+
+            {/* Next button */}
+            <button
+              className="absolute right-5 text-white text-4xl font-bold hover:text-gray-300 z-50"
+              onClick={(e) => {
+                e.stopPropagation();
+                nextImage();
+              }}
+              onTouchStart={(e) => e.stopPropagation()}
+              onTouchEnd={(e) => e.stopPropagation()}
+            >
+              ›
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}

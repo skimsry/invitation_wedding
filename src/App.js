@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { Routes, Route } from 'react-router-dom';
+import Welcome from './pages/Welcome';
+import Gallery from './pages/Gallery';
+import WeddingDate from './pages/WeddingDate';
+import Countdown from './pages/Countdown';
+import ScanMoney from './pages/ScanMoney';
+import WelcomParents from './pages/WelcomeParents';
+import BackgroundMusic from "./components/BackgroundMusic";
+import WelcomeSpouse from "./pages/WelcomeSpouse";
+import Spouse from "./pages/Spouse";
+import Video from './pages/Video';
+import Map from './pages/Map';
+import Contact from './pages/Contact';
+import List from './pages/List';
+// import ScrollNavigation from './pages/ScrollNavigation';
+export default function App() {
+return (   
+    <>
+      <BackgroundMusic /> 
+    <Routes>
+        <Route path="/" element={<Welcome />} />
+        {/* <Route path="/" element={<ScrollNavigation />} /> */}
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/date" element={<WeddingDate />} />
+        <Route path="/countdown" element={<Countdown />} />
+        <Route path="/scan" element={<ScanMoney />} />
+        <Route path="/welcomeparent" element={<WelcomParents />} /> 
+        <Route path="/welcomespouse" element={<WelcomeSpouse />} /> 
+        <Route path="/spouse" element={<Spouse />} /> 
+        <Route path="/qrscan" element={<ScanMoney />} /> 
+        <Route path="/prewedding" element={<Video />} /> 
+        <Route path="/map" element={<Map />} /> 
+        <Route path="/contact" element={<Contact />} /> 
+        <Route path="/list" element={<List />} /> 
+    </Routes>  
+    </> 
+);
 }
-
-export default App;
