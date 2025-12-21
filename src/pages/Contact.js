@@ -128,7 +128,7 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 className="text-white hover:text-[#d5c243] transition-colors font-battambang drop-shadow-lg"
               >
-                {/* <span className="text-green-900 sm:text-[#d5c243] md:text-[#d5c243]">{val.name}</span>: {val.link} */}
+                
                 <span className="text-green-900 sm:text-[#d5c243] md:text-[#d5c243]">{val.name}</span>: {val.call}
               </a>
             )
