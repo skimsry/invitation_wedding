@@ -7,36 +7,36 @@ import Bubbles from "../components/Bubbles";
 import Typewriter from "../components/Typewriter";
 
 export default function Welcome() {
-  const navigate = useNavigate();
+//   const navigate = useNavigate();
 
-  useEffect(() => {
-  const handleWheel = (e) => {
-    if (e.deltaY > 50) { // scroll down
-      navigate("/welcomespouse");
-    }
-  };
+//   useEffect(() => {
+//   const handleWheel = (e) => {
+//     if (e.deltaY > 50) { // scroll down
+//       navigate("/welcomespouse");
+//     }
+//   };
 
-  const handleTouchStart = (e) => {
-    touchStartY = e.touches[0].clientY;
-  };
-  const handleTouchEnd = (e) => {
-    const touchEndY = e.changedTouches[0].clientY;
-    if (touchStartY - touchEndY > 50) { // swipe up
-      navigate("/welcomespouse");
-    }
-  };
+//   const handleTouchStart = (e) => {
+//     touchStartY = e.touches[0].clientY;
+//   };
+//   const handleTouchEnd = (e) => {
+//     const touchEndY = e.changedTouches[0].clientY;
+//     if (touchStartY - touchEndY > 50) { // swipe up
+//       navigate("/welcomespouse");
+//     }
+//   };
 
-  let touchStartY = 0;
-  window.addEventListener("wheel", handleWheel, { passive: true });
-  window.addEventListener("touchstart", handleTouchStart, { passive: true });
-  window.addEventListener("touchend", handleTouchEnd, { passive: true });
+//   let touchStartY = 0;
+//   window.addEventListener("wheel", handleWheel, { passive: true });
+//   window.addEventListener("touchstart", handleTouchStart, { passive: true });
+//   window.addEventListener("touchend", handleTouchEnd, { passive: true });
 
-  return () => {
-    window.removeEventListener("wheel", handleWheel);
-    window.removeEventListener("touchstart", handleTouchStart);
-    window.removeEventListener("touchend", handleTouchEnd);
-  };
-}, [navigate]);
+//   return () => {
+//     window.removeEventListener("wheel", handleWheel);
+//     window.removeEventListener("touchstart", handleTouchStart);
+//     window.removeEventListener("touchend", handleTouchEnd);
+//   };
+// }, [navigate]);
 
 
   return (
@@ -79,7 +79,7 @@ export default function Welcome() {
         <h2 className="animate-fade-in-up text-xl sm:text-xl md:text-xl lg:text-2xl text-lime-100 mb-8 lg:mb-12 md:mb-12 leading-tight font-kh">
           <Typewriter text="លោក វរសេនីយ៍ត្រី សន គឹមស្រ៊ី" speed={90} delay={800} />
         </h2>
-
+{/* <div className="pb-8 pt-4 flex justify-center">
         <Link
           to="/welcomespouse"
           className="
@@ -91,8 +91,62 @@ export default function Welcome() {
             transition-all duration-300 ease-out font-battambang animate-bounce
           "
         >
-          បើកសំបុត្រអញ្ជើញ
-        </Link>
+          បើកសំបុត្រអញ្ជើញ <svg
+  fill="#14532D"
+  height="32px"
+  width="32px"
+  version="1.1"
+  id="Layer_1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlnsXlink="http://www.w3.org/1999/xlink"
+  viewBox="0 0 128 128"
+  xmlSpace="preserve"
+>
+  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+  <g
+    id="SVGRepo_tracerCarrier"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  ></g>
+  <g id="SVGRepo_iconCarrier">
+    <path d="M32.9,110c0,0,0-3.3,0-3.8h47.5c-0.7,1.4-1.2,3-1.5,4.5c-0.4,2.1-0.2,4.1,0.3,6l-39.7-0.1C35.8,116.6,32.9,113.6,32.9,110 M85.4,24.4c0,6.8-0.1,67-0.1,73.8H39.9l28.4-23.8l-0.1-50.1C70.8,24.4,82.9,24.4,85.4,24.4 M89.8,116.7h-1.9 c-1.1-1.2-1.5-2.8-1.2-4.7c0.5-3.1,2.8-5.7,3.9-6.1l0,0c1.5-0.5,2.7-2,2.7-3.7l0.1-81.8c0-2.2-1.8-4-4-4c0,0-16.5,0-21.1,0 c0-3.9,0-9.2,0-9.2c0-1.6-0.9-3.1-2.4-3.7c-1.5-0.6-3.2-0.3-4.3,0.8L33.8,31.9c-4.9,4.8-8.7,14-8.7,20.8L24.9,110 c0,8,6.5,14.6,14.5,14.6l50.3,0.2c2.2,0,4-1.8,4-4v0C93.7,118.5,92,116.8,89.8,116.7" />
+  </g>
+</svg>
+
+        </Link></div> */}
+        <Link
+  to="/welcomespouse"
+  className="
+    px-8 py-3 
+    bg-white text-green-900 
+    text-sm sm:text-base font-bold uppercase tracking-wider
+    rounded-full shadow-xl 
+    hover:scale-105 hover:bg-gray-100 hover:shadow-2xl 
+    transition-all duration-300 ease-out font-battambang animate-bounce
+    inline-flex items-center gap-2
+  "
+>
+  <span>បើកសំបុត្រអញ្ជើញ</span>
+  <svg
+    fill="#14532D"
+    height="28px"
+    width="28px"
+    viewBox="0 0 128 128"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlSpace="preserve"
+  >
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+  <g
+    id="SVGRepo_tracerCarrier"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  ></g>
+  <g id="SVGRepo_iconCarrier">
+    <path d="M32.9,110c0,0,0-3.3,0-3.8h47.5c-0.7,1.4-1.2,3-1.5,4.5c-0.4,2.1-0.2,4.1,0.3,6l-39.7-0.1C35.8,116.6,32.9,113.6,32.9,110 M85.4,24.4c0,6.8-0.1,67-0.1,73.8H39.9l28.4-23.8l-0.1-50.1C70.8,24.4,82.9,24.4,85.4,24.4 M89.8,116.7h-1.9 c-1.1-1.2-1.5-2.8-1.2-4.7c0.5-3.1,2.8-5.7,3.9-6.1l0,0c1.5-0.5,2.7-2,2.7-3.7l0.1-81.8c0-2.2-1.8-4-4-4c0,0-16.5,0-21.1,0 c0-3.9,0-9.2,0-9.2c0-1.6-0.9-3.1-2.4-3.7c-1.5-0.6-3.2-0.3-4.3,0.8L33.8,31.9c-4.9,4.8-8.7,14-8.7,20.8L24.9,110 c0,8,6.5,14.6,14.5,14.6l50.3,0.2c2.2,0,4-1.8,4-4v0C93.7,118.5,92,116.8,89.8,116.7" />
+  </g>
+  </svg>
+</Link>
+
       </div>
     </div>
   );
