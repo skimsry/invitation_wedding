@@ -107,9 +107,14 @@ export default function WelcomeParents() {
 <p className="animate-fade-in-up text-xl sm:text-2lg md:text-2xl   text-green-900 sm:text-white md:text-white sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] sm:mb-4 sm:px-4 md:mb-4 md:px-4 leading-relaxed font-kh">
           សូមគោរពអញ្ជើញ
         </p>
-  <p className="font-battambang text-green-900 sm:text-white md:text-white leading-relaxed drop-shadow-lg mb-8 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] shadow-white/80">
+  {/* <p className="font-battambang text-green-900 sm:text-white md:text-white leading-relaxed drop-shadow-lg mb-8 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] shadow-white/80">
       ឯកឧត្តម លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា ចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ដើម្បីប្រសិទ្ធពរជ័យ សិរីសួស្តី ជ័យមង្គល ក្នុងពិធីរៀបអាពាហ៍ពិពាហ៍ កូនប្រុស កូនស្រី របស់យើងខ្ញុំ។
-    </p>
+    </p> */}
+    <p className="font-battambang text-green-900 sm:text-white md:text-white leading-relaxed drop-shadow-lg mb-8 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] shadow-white/80 text-justify sm:text-left indent-[1em] sm:indent-0">
+  ឯកឧត្តម លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា ចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ដើម្បីប្រសិទ្ធពរជ័យ សិរីសួស្តី ជ័យមង្គល ក្នុងពិធីរៀបអាពាហ៍ពិពាហ៍ កូនប្រុស កូនស្រី របស់យើងខ្ញុំ។
+</p>
+
+
   {/* <Link
           to="/spouse"
           className="

@@ -1,27 +1,28 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Bubbles from "../components/Bubbles";
-import img1 from '../assets/gallery/1.png';
-import img2 from '../assets/gallery/2.JPG';
-import img3 from '../assets/gallery/3.JPG';
-import img4 from '../assets/gallery/4.JPG';
-import img5 from '../assets/gallery/5.JPG';
-import img6 from '../assets/gallery/6.JPG';
-import img7 from '../assets/gallery/7.JPG';
-import img8 from '../assets/gallery/8.JPG';
-import img9 from '../assets/gallery/9.JPG';
-import img10 from '../assets/gallery/10.JPG';
-import img11 from '../assets/gallery/11.JPG';
-import img12 from '../assets/gallery/12.JPG';
-import img13 from '../assets/gallery/13.JPG';
-import img14 from '../assets/gallery/14.JPG';
-import img15 from '../assets/gallery/15.JPG';
-import img16 from '../assets/gallery/16.JPG';
-import img17 from '../assets/gallery/17.JPG';
-import img18 from '../assets/gallery/18.JPG';
-import img19 from '../assets/gallery/19.JPG';
-import img20 from '../assets/gallery/20.JPG';
-import img21 from '../assets/gallery/21.JPG';
+import img1 from '../assets/gallery/1.webp';
+import img2 from '../assets/gallery/2.webp';
+import img3 from '../assets/gallery/3.webp';
+import img4 from '../assets/gallery/4.webp';
+import img5 from '../assets/gallery/5.webp';
+import img6 from '../assets/gallery/6.webp';
+import img7 from '../assets/gallery/7.webp';
+import img8 from '../assets/gallery/8.webp';
+import img9 from '../assets/gallery/9.webp';
+import img10 from '../assets/gallery/10.webp';
+import img11 from '../assets/gallery/11.webp';
+import img12 from '../assets/gallery/12.webp';
+import img13 from '../assets/gallery/13.webp';
+import img14 from '../assets/gallery/14.webp';
+import img15 from '../assets/gallery/15.webp';
+import img16 from '../assets/gallery/16.webp';
+import img17 from '../assets/gallery/17.webp';
+import img18 from '../assets/gallery/18.webp';
+import img19 from '../assets/gallery/19.webp';
+import img20 from '../assets/gallery/20.webp';
+import img21 from '../assets/gallery/21.webp';
+import img22 from '../assets/gallery/22.webp';
 export default function Gallery() {
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [direction, setDirection] = useState(0);
@@ -31,7 +32,7 @@ export default function Gallery() {
   const touchEndX = useRef(0);
 
   const images = [
-    img1,img2,img3,img13,img4,img9,img5,img6,img7,img8,img10,img14,img11,img12,img16,img17,img15,img18,img20,img19,img21,
+    img1,img2,img3,img13,img4,img9,img5,img6,img7,img8,img10,img14,img11,img12,img16,img17,img15,img18,img20,img19,img21,img22
     
   ];
 
@@ -88,7 +89,9 @@ export default function Gallery() {
   }, [selectedIndex]);
 
   return (
-    <div className="relative w-full min-h-[100dvh] bg-green-900 flex flex-col items-center justify-center text-center p-6 sm:p-12 animate-fadeIn overflow-hidden">
+    <div className="relative w-full min-h-[100dvh] bg-green-950 flex flex-col items-center justify-center text-center p-6 sm:p-12 animate-fadeIn overflow-hidden">
+    
+
       <Bubbles />
       {/* Blur only on desktop */}
       <div className="hidden md:block absolute inset-0 backdrop-blur-sm bg-white/5 z-0"></div>
@@ -96,7 +99,7 @@ export default function Gallery() {
 
       <div className="relative z-10 flex flex-col items-center w-full">
         {/* Titles */}
-        <h2 className="animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-[#d5c243] drop-shadow-lg mb-8 lg:mb-12 md:mb-12 leading-tight font-kh">
+        <h2 className="animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-[#d5c243] drop-shadow-lg mb-4 lg:mb-12 md:mb-12 leading-tight font-kh">
           សិរីមង្គលអាពាហ៍ពិពាហ៍
         </h2>
         <h1 className="animate-fade-in-up text-3xl sm:text-3xl md:text-4xl lg:text-6xl text-[#d5c243] drop-shadow-lg mb-8 sm:mb-12 md:mb-12 lg:mb-12 leading-tight font-moulpali">
@@ -105,17 +108,26 @@ export default function Gallery() {
 
         {/* Gallery */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8 sm:mb-12 md:mb-12 lg:mb-12">
-          {images.map((src, index) => (
-            <div key={index}>
-              <img
-                className="h-auto max-w-full rounded-xl border-2 border-gray-300 cursor-pointer hover:scale-105 transition-transform"
-                src={src}
-                alt={`Gallery ${index + 1}`}
-                onClick={() => openImage(index)}
-              />
-            </div>
-          ))}
-        </div>
+  {images.map((src, index) => {
+    const isImg22 = index === images.length - 1; // last one
+
+    return (
+      <div
+        key={index}
+        className={isImg22 ? "block md:hidden" : ""} // 👈 only mobile
+      >
+        <img
+          className="h-auto max-w-full rounded-xl border-2 border-gray-300 cursor-pointer hover:scale-105 transition-transform"
+          src={src}
+          loading="lazy"
+          alt={`Gallery ${index + 1}`}
+          onClick={() => openImage(index)} // 👈 correct
+        />
+      </div>
+    );
+  })}
+</div>
+
 
         {/* Link */}
         <div className="flex gap-4">

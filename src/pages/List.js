@@ -200,7 +200,7 @@ export default function Contact() {
           >
             បើកវិចិត្រសាល
           </Link> */}
-          <div className="flex justify-center gap-4">
+          <div className="flex justify-center gap-4 pb-16">
   <Link
     to="/date"
     className="
