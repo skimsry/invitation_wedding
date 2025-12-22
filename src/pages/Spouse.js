@@ -1,9 +1,9 @@
-import bgwelcomespouse from "../assets/bgwelcome_temple2.png";
-import bgwelcomeMobile from "../assets/bgwelcome_spouse_mobile.png"; 
+import bgwelcomespouse from "../assets/bgwelcome_temple2.webp";
+import bgwelcomeMobile from "../assets/bgwelcome_spouse_mobile.webp"; 
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import male from "../assets/male.png";
-import female from "../assets/woman.png";
+import male from "../assets/male.webp";
+import female from "../assets/woman.webp";
 import Bubbles from "../components/Bubbles";
 
 export default function Spouse() {

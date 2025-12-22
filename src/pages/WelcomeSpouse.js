@@ -1,5 +1,5 @@
-import bgwelcomespouse from "../assets/bgwelcome_spouse.png";
-import bgwelcomeMobile from "../assets/bgwelcome_spouse2_mobile.png"; 
+import bgwelcomespouse from "../assets/bgwelcome_spouse.webp";
+import bgwelcomeMobile from "../assets/bgwelcome_spouse2_mobile.webp"; 
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import gb from "../assets/gb.png";

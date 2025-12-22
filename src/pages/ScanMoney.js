@@ -1,9 +1,9 @@
-import bgscan from "../assets/bgscan.png";
-import bgwelcomeMobile from "../assets/bgwelcome_qr_mobile.jpg"; 
+import bgscan from "../assets/bgscan.webp";
+import bgwelcomeMobile from "../assets/bgwelcome_qr_mobile.webp"; 
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import dollar from "../assets/dollar.jpg";
-import acleda from "../assets/acleda.jpg";
+import dollar from "../assets/dollar.webp";
+import acleda from "../assets/acleda.webp";
 import Bubbles from "../components/Bubbles";
 export default function ScanMoney() {
   // const navigate = useNavigate();

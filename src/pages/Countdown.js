@@ -1,7 +1,7 @@
 
 import { useCallback, useEffect, useState } from "react";
-import bgcountdate from "../assets/bgcountdate.png";
-import bgwelcomeMobile from "../assets/mobile_bg.png";
+import bgcountdate from "../assets/bgcountdate.webp";
+import bgwelcomeMobile from "../assets/mobile_bg.webp";
 import { Link, useNavigate } from "react-router-dom";
 import Bubbles from "../components/Bubbles";
 

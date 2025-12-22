@@ -1,5 +1,5 @@
-import bgwelcomeparents from "../assets/bgwelcome_parents.png";
-import bgwelcomeMobile from "../assets/bgwelcome_parents2_mobile.png"; 
+import bgwelcomeparents from "../assets/bgwelcome_parents.webp";
+import bgwelcomeMobile from "../assets/bgwelcome_parents2_mobile.webp"; 
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Bubbles from "../components/Bubbles";

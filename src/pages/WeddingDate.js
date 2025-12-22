@@ -1,5 +1,5 @@
-import bgdate from "../assets/bgdate.png";
-import bgwelcomeMobile from "../assets/bgwelcome_date_mobile.jpg"; 
+import bgdate from "../assets/bgdate.webp";
+import bgwelcomeMobile from "../assets/bgwelcome_date_mobile.webp"; 
 import Typewriter from "../components/Typewriter";
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";

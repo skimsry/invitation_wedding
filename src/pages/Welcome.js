@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import bgwelcome from "../assets/bgwelcome_temple.png";
-import bgwelcomeMobile from "../assets/mobile_bg.png";
+import bgwelcome from "../assets/bgwelcome_temple.webp";
+import bgwelcomeMobile from "../assets/mobile_bg.webp";
 import ring from "../assets/ring.png";
 import Bubbles from "../components/Bubbles";
 import Typewriter from "../components/Typewriter";

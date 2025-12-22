@@ -1,5 +1,5 @@
-import bgcontact from "../assets/bgcontact.png";
-import bgwelcomeMobile from "../assets/bgwelcome_contact_mobile.jpg"; 
+import bgcontact from "../assets/bgcontact.webp";
+import bgwelcomeMobile from "../assets/bgwelcome_contact_mobile.webp"; 
 import Bubbles from "../components/Bubbles";
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
