@@ -44,7 +44,7 @@ export default function Map() {
   //   };
   // }, [navigate]);
   return (
-    <div className="relative w-full h-screen bg-green-900 flex flex-col items-center justify-center text-center p-4 sm:p-6 overflow-hidden">
+    <div className="relative w-full h-screen bg-green-950 flex flex-col items-center justify-center text-center p-4 sm:p-6 overflow-hidden">
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/30 z-0"></div>

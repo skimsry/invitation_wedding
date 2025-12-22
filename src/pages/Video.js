@@ -43,7 +43,7 @@ export default function Video() {
   //   };
   // }, [navigate]);
   return (
-    <div className="relative w-full h-screen bg-orange-200 flex flex-col items-center justify-center text-center p-4 sm:p-6 overflow-hidden">
+    <div className="relative w-full h-screen bg-green-950 flex flex-col items-center justify-center text-center p-4 sm:p-6 overflow-hidden">
       {/* Blur only on desktop */}
       <div className="hidden md:block absolute inset-0 backdrop-blur-sm bg-white/5 z-0"></div>
       <div className="absolute inset-0 bg-black/30 z-0"></div>
