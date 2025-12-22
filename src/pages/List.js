@@ -106,7 +106,7 @@ export default function Contact() {
     ម៉ោង ០៧:០០ ព្រឹក
   </dt>
   <dd className="font-battambang text-left text-green-800 leading-relaxed sm:text-[#e7d996] md:text-[#e7d996] drop-shadow-lg mb-1 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
-    ពិធីហែជំនូនជូនផ្កាស្លា និយាយជើងការ និងជូនបណ្តាការ
+    ពិធីហែជំនូនជូនផ្កាស្លា និងជូនបណ្តាការ
   </dd>
 </dl>
 <dl>
