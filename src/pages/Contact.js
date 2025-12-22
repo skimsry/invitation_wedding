@@ -83,7 +83,7 @@ export default function Contact() {
         "--bg-desktop": `url(${bgcontact})`,
       }}
     >
-      
+      <div className="hidden md:block absolute inset-0 backdrop-blur-sm bg-black/20 z-0" />
       <Bubbles />
 
       {/* Overlay */}
@@ -180,7 +180,7 @@ export default function Contact() {
     
   </Link>
   <Link
-    to="/"
+    to="/thanks"
     className="
       px-8 py-3 
       bg-white text-green-900 
@@ -191,7 +191,7 @@ export default function Contact() {
       flex items-center gap-2 whitespace-nowrap
     "
   >
-    <span>ទំព័រដើម</span>
+    <span>បន្ទាប់</span>
     <svg
       width="28"
       height="28"

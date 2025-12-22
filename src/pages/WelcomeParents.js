@@ -1,5 +1,5 @@
 import bgwelcomeparents from "../assets/bgwelcome_parents.webp";
-import bgwelcomeMobile from "../assets/bgwelcome_parents2_mobile.webp"; 
+import bgwelcomeMobile from "../assets/bgwelcome_parents2_mobile.png"; 
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Bubbles from "../components/Bubbles";
@@ -73,7 +73,7 @@ export default function WelcomeParents() {
 
   {/* Right Div */}
   <div className="text-center animate-fade-in-up">
-  <h2 className="animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-green-900 sm:text-[#d5c243] md:text-[#d5c243] drop-shadow-lg mb-4 lg:mb-12 md:mb-12 leading-tight font-kh sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+  <h2 className="whitespace-nowrap animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-green-900 sm:text-[#d5c243] md:text-[#d5c243] drop-shadow-lg mb-4 lg:mb-12 md:mb-12 leading-tight font-kh sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
   សិរីមង្គលអាពាហ៍ពិពាហ៍
   </h2>
   {/* Parents Section */}

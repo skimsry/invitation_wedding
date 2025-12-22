@@ -12,6 +12,7 @@ import Video from './pages/Video';
 import Map from './pages/Map';
 import Contact from './pages/Contact';
 import List from './pages/List';
+import Thanks from './pages/Thanks';
 // import ScrollNavigation from './pages/ScrollNavigation';
 export default function App() {
 return (   
@@ -32,6 +33,7 @@ return (
         <Route path="/map" element={<Map />} /> 
         <Route path="/contact" element={<Contact />} /> 
         <Route path="/list" element={<List />} /> 
+        <Route path="/thanks" element={<Thanks />} /> 
     </Routes>  
     </> 
 );

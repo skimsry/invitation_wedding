@@ -72,11 +72,21 @@ export default function Welcome() {
         <h1 className="animate-fade-in-up text-3xl sm:text-3xl md:text-4xl lg:text-6xl text-green-900 sm:text-[#e7d996] md:text-[#e7d996] drop-shadow-lg mb-8 leading-tight font-moulpali">
           សុធារ័ត្ឋ
         </h1>
-        <p className="animate-fade-in-up text-xl sm:text-2lg md:text-2xl text-green-900 sm:text-[#d5c243] md:text-[#d5c243] mb-4 px-4 leading-relaxed font-battambang">
-          សូមគោរពអញ្ជើញ
-        </p>
+        <p className="
+  animate-fade-in-up
+  text-xl sm:text-2lg md:text-2xl
+  text-green-900 sm:text-[#d5c243] md:text-[#d5c243]
+  mb-4 px-4 leading-relaxed
+  font-battambang
+  sm:drop-shadow-[0_2px_3px_rgba(0,0,0,0.8)]
+  sm:[-webkit-text-stroke:.1px_#000000]
+">
+  សូមគោរពអញ្ជើញ
+</p>
 
-        <h2 className="animate-fade-in-up text-xl sm:text-xl md:text-xl lg:text-2xl text-lime-100 mb-8 lg:mb-12 md:mb-12 leading-tight font-kh">
+        
+        <h2 className="sm:drop-shadow-[0_2px_3px_rgba(0,0,0,0.8)]
+  sm:[-webkit-text-stroke:.1px_#ffffff] animate-fade-in-up text-xl sm:text-xl md:text-xl lg:text-2xl text-lime-100 mb-8 lg:mb-12 md:mb-12 leading-tight font-kh">
           <Typewriter text="លោក វរសេនីយ៍ត្រី សន គឹមស្រ៊ី" speed={90} delay={800} />
         </h2>
 {/* <div className="pb-8 pt-4 flex justify-center">

@@ -71,7 +71,7 @@ export default function WelcomeSpouse() {
        
 <div className="w-full grid grid-cols-1 md:grid-cols-2">
   <div className="text-center animate-fade-in-up">
-  <h2 className="animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-green-900 sm:text-[#d5c243] md:text-[#d5c243] drop-shadow-lg mb-4 lg:mb-12 md:mb-12 leading-tight font-kh sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+  <h2 className="whitespace-nowrap animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-green-900 sm:text-[#d5c243] md:text-[#d5c243] drop-shadow-lg mb-4 lg:mb-12 md:mb-12 leading-tight font-kh sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
   សិរីមង្គលអាពាហ៍ពិពាហ៍
   </h2>
   
@@ -166,7 +166,7 @@ export default function WelcomeSpouse() {
       max-w-[280px]
     "
   >
-    ផែនទី គេហដ្ឋានខាងកូនស្រី
+    គេហដ្ឋានខាងកូនស្រី
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 232597 333333"

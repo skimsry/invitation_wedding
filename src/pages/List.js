@@ -1,5 +1,5 @@
 import bglist from "../assets/bglist.webp";
-import bgwelcomeMobile from "../assets/bgwelcome_list_mobile.webp"; 
+import bgwelcomeMobile from "../assets/bgwelcome_list_mobile.png"; 
 import Bubbles from "../components/Bubbles";
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -74,8 +74,8 @@ export default function Contact() {
           px-4 py-6 sm:px-6
         "
       >
-        <div className="flex flex-col items-center w-full max-w-5xl text-center mt-24 sm:mt-0 md:mt-0 lg:mt-0">
-          <h2 className="hidden md:block animate-fade-in-up text-3xl sm:text-4xl md:text-5xl font-kh text-[#d5c243] mb-6 drop-shadow-lg">
+        <div className="flex flex-col items-center w-full max-w-5xl text-center">
+          <h2 className="hidden md:block sm:block animate-fade-in-up text-3xl sm:text-4xl md:text-5xl font-kh text-[#d5c243] mb-6 drop-shadow-lg">
             សិរីមង្គលអាពាហ៍ពិពាហ៍
           </h2>
 
@@ -182,7 +182,7 @@ export default function Contact() {
             </h3>
             <dl>
   <dt className="text-left font-battambang font-bold italic text-green-800 leading-relaxed sm:text-[#d5c243] md:text-[#d5c243] drop-shadow-lg mb-1 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
-    ម៉ោង ០៥ៈ០០ ល្ងាច
+    ម៉ោង ០៥:០០ ល្ងាច
   </dt>
   <dd className="font-battambang text-left text-green-800 leading-relaxed sm:text-[#e7d996] md:text-[#e7d996] drop-shadow-lg mb-1 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
     ទទួលបដិសណ្ឋារកិច្ចភ្ញៀវកិត្តិយសពិសារភោជនាហាពេលល្ងាច នៅគេហដ្ឋានខាងស្រី ស្រុកកោះធំ (ស្ពានទី៤៦ ក្បែរវត្តតាដួង)
