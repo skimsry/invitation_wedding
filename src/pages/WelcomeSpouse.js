@@ -152,7 +152,7 @@ export default function WelcomeSpouse() {
 
   <div className="pb-8 pt-4 flex justify-center">
   <a
-    href="https://maps.app.goo.gl/fko6nLHnfZ8P1it86"
+    href="https://maps.app.goo.gl/s5vf9Bsu8oqJjbsP8"
     target="_blank"
     rel="noopener noreferrer"
     className="

@@ -59,11 +59,12 @@ export default function Map() {
         <div className="w-full h-[85%] rounded-xl shadow-2xl overflow-hidden">
           <iframe
             className="w-full h-full border-0"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15638.67710438229!2d105.0440525!3d11.5037639!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310bfd417ff33b7b%3A0xa131c6a2135ba78e!2sKokir%20Market!5e0!3m2!1sen!2skh!4v1766134272356!5m2!1sen!2skh"
+            src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3542.1417558199028!2d105.0597371!3d11.1732632!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDEwJzI0LjIiTiAxMDXCsDAzJzM0LjciRQ!5e1!3m2!1sen!2skh!4v1766403395869!5m2!1sen!2skh"
             allowFullScreen
             aria-hidden="false"
             tabIndex="0"
           />
+          
         </div>
 
         {/* Button Link */}
