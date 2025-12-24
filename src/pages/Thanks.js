@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import bgwelcome from "../assets/bgwelcome_temple_thank.webp";
-import bgwelcomeMobile from "../assets/bgwelcome_gallery.jpg";
+import bgwelcomeMobile from "../assets/bgwelcome_gallery.png";
 import Bubbles from "../components/Bubbles";
 import male from "../assets/thank.png";
 
@@ -20,14 +20,14 @@ export default function Thanks() {
         "--bg-desktop": `url(${bgwelcome})`,
       }}
     >
-      <div className="hidden md:block absolute inset-0 backdrop-blur-sm bg-black/20 z-0" />
+      {/* <div className="hidden md:block absolute inset-0 backdrop-blur-sm bg-black/20 z-0" /> */}
       <Bubbles />
-      <div className="absolute inset-0 bg-black/30 z-0"></div>
+      <div className="absolute inset-0 bg-black/60 z-0"></div>
 
       <div className="relative z-10 flex flex-col items-center w-full">
-        <h2 className="animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-green-900 sm:text-[#d5c243] md:text-[#d5c243] drop-shadow-lg mb-8 lg:mb-12 md:mb-12 leading-tight font-kh">
-          សិរីមង្គលអាពាហ៍ពិពាហ៍
-        </h2>
+        <h2 className="animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-yellow-400 drop-shadow-lg mb-8 lg:mb-12 md:mb-12 leading-tight font-kh">
+  សិរីមង្គលអាពាហ៍ពិពាហ៍
+</h2>
         <img
   src={male}
   alt="profile"
@@ -49,9 +49,9 @@ export default function Thanks() {
   block sm:hidden
   animate-fade-in-up
   text-lg pb-2
-  text-green-900
+  text-white
   leading-relaxed
-  font-kh
+  font-moulpali
 ">
   ការអំណរគុណ និងអភ័យទោស
 </p>
@@ -61,27 +61,27 @@ export default function Thanks() {
   hidden sm:block
   animate-fade-in-up
   text-xl sm:text-2lg md:text-2xl
-  text-green-900 sm:text-white md:text-white
+  text-white
   sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]
   md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]
   sm:mb-4 sm:px-4 md:mb-4 md:px-4
   leading-relaxed
-  font-kh
+  font-moulpali
 ">
   សេចក្តីថ្លៃងអំណរគុណ និងសូមអភ័យទោស
 </p>
 
   
     <p className="
-  px-0 sm:px-40 md:px-48
+  
   font-battambang
-  text-green-900 sm:text-white md:text-white
+  text-white
   leading-relaxed
   drop-shadow-lg mb-8
   sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]
   md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]
   shadow-white/80
-  text-justify
+  
   indent-[2em]
 ">
   យើងខ្ញុំសូមថ្លែងអំណរគុណយ៉ាងជ្រាលជ្រៅចំពោះការអញ្ជើញចូលរួមជា ភ្ញៀវកិត្តិយស ក្នុងពិធីមង្គលការរបស់យើងខ្ញុំ ។ យើងខ្ញុំសូមអភ័យទោស ដោយពុំបានជួបអញ្ជើញដោយផ្ទាល់ ឬការសរសេរឈ្មោះរបស់ភ្ញៀវកិត្តិយសមិនបានត្រឹមត្រូវ ឬពុំបានសរសេរឈ្មោះ ។ យើងខ្ញុំសូមគោរពជូនពរជ័យ ឯកឧត្តម លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា និងភ្ញៀវកិត្តិយសទាំងអស់មានសុខភាពល្អ និងទទួលបានភាពជោគជ័យគ្រប់ភារកិច្ច ។ សូមអរគុណ !
@@ -99,7 +99,7 @@ export default function Thanks() {
       text-sm sm:text-base font-bold uppercase tracking-wider
       rounded-full shadow-xl 
       hover:scale-105 hover:bg-gray-100 hover:shadow-2xl 
-      transition-all duration-300 ease-out font-battambang
+      transition-all duration-300 ease-out  font-kangrey
       flex items-center gap-2 whitespace-nowrap
     "
   ><svg
@@ -129,7 +129,7 @@ export default function Thanks() {
       text-sm sm:text-base font-bold uppercase tracking-wider
       rounded-full shadow-xl 
       hover:scale-105 hover:bg-gray-100 hover:shadow-2xl 
-      transition-all duration-300 ease-out font-battambang animate-bounce
+      transition-all duration-300 ease-out font-kangrey animate-bounce
       flex items-center gap-2 whitespace-nowrap
     "
   >

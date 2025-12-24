@@ -1,5 +1,5 @@
 import bgscan from "../assets/bgscan.webp";
-import bgwelcomeMobile from "../assets/bgwelcome_qr_mobile.webp"; 
+import bgwelcomeMobile from "../assets/bgwelcome_qr_mobile.png"; 
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import dollar from "../assets/dollar.webp";
@@ -62,23 +62,29 @@ export default function ScanMoney() {
       }}
     >
       <Bubbles />
-      <div className="absolute inset-0 bg-black/30 z-0"></div>
+      <div className="absolute inset-0 bg-black/60 z-0"></div>
       
       <div className="relative z-10 flex flex-col items-center w-full">
         
        
 <div className="w-full grid grid-cols-1 md:grid-cols-2">
   <div className="text-center animate-fade-in-up">
-  <h2 className="animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-green-900 sm:text-[#d5c243] md:text-[#d5c243] drop-shadow-lg mb-4 lg:mb-12 md:mb-12 leading-tight font-kh sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+  {/* <h2 className="animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-green-900 sm:text-[#d5c243] md:text-[#d5c243] drop-shadow-lg mb-4 lg:mb-12 md:mb-12 leading-tight font-kh sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
   ចំណងដៃឌីជីថល
+  </h2> */}
+  <h2 className="animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-yellow-400 drop-shadow-lg mb-4 lg:mb-8 md:mb-8 leading-tight font-kh sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+  សិរីមង្គលអាពាហ៍ពិពាហ៍
   </h2>
   
+         <p className="sm:[-webkit-text-stroke:.1px_#000000] animate-fade-in-up text-xl sm:text-2lg md:text-3xl  text-white sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] mb-4 px-4 sm:mb-8 sm:px-8 md:mb-8 md:px-8 lg:mb-8 lg:px-8 leading-relaxed font-moulpali">
+          ចំណងដៃឌីជីថល
+        </p>
 
-<div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-4 gap-6 sm:mb-10 sm:px-4 md:mb-10 md:px-4 mb-2 px-2">
+<div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-4 gap-6">
 
   {/* Left Div */}
   <div className="col-span-2 text-center animate-fade-in-up">
-    <h3 className="text-lg md:text-xl font-kh text-green-900 mb-2 sm:mb-4 md:mb-4 sm:text-[#d5c243] md:text-[#d5c243] drop-shadow-lg sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+    <h3 className="text-lg md:text-xl font-kh text-[#d5c243] mb-2 sm:mb-4 md:mb-4 drop-shadow-lg sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
       Acleda QR (៛)($)
     </h3>
 <img
@@ -90,7 +96,7 @@ export default function ScanMoney() {
   {/* <p className="text-lg md:text-xl font-kh text-green-800 leading-relaxed sm:text-[#e7d996] md:text-[#e7d996] drop-shadow-lg mb-2 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
     KIMSRY SORN 
   </p> */}
-  <p className="hidden md:block text-lg md:text-xl font-kh text-green-800 leading-relaxed sm:text-[#e7d996] md:text-[#e7d996] drop-shadow-lg sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] mb-2">
+  <p className="hidden md:block text-lg md:text-xl font-kh text-[#d5c243] leading-relaxed sm:text-[#e7d996] md:text-[#e7d996] drop-shadow-lg sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] mb-2">
   KIMSRY SORN 
 </p>
 
@@ -98,7 +104,7 @@ export default function ScanMoney() {
 
   {/* Right Div */}
   <div className="col-span-2 text-center animate-fade-in-up">
-    <h3 className="text-lg md:text-xl font-kh text-green-900 sm:mb-4 md:mb-4 mb-2 sm:text-[#d5c243] md:text-[#d5c243] drop-shadow-lg sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+    <h3 className="text-lg md:text-xl font-kh text-[#d5c243] sm:mb-4 md:mb-4 mb-2 drop-shadow-lg sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
        ABA QR ($)
     </h3>
    <div className="text-center pb-2">
@@ -118,18 +124,18 @@ export default function ScanMoney() {
 
 </div>
  
-  <div className="pb-8 flex justify-center">
+  <div className="mb-6 flex justify-center">
   <a
     href="https://acledabank.com.kh/acleda?payment_data=qWY5B2SAUfIhLblxzOtfu5ckLzMHjaSki6Ru0bsOyNK+ylPBgZ0sHH6BeGUscKoE6vI2UzRWmc+Od5kkwlR0bWp0xj4HrVrqNi0p/TSGrh31nNQIsTsZ4NR/dRObjrLeZoXr/rfuXF3K0C8aE6ndR6wwAdG4SiEdmR9DcGdA3MCq91od83tqJKC15TFuS/QtxctV9mQNqjAompzuZ0TJ+2pqgncagiRAQ777F9M5kks=&key=khqr"
     target="_blank"
     rel="noopener noreferrer"
     className="
       px-4 py-3
-      bg-white text-green-900 
+      bg-lime-950 text-yellow-400 
       text-sm sm:text-base font-bold uppercase tracking-wider
       rounded-full shadow-xl 
-      hover:scale-105 hover:bg-gray-100 hover:shadow-2xl 
-      transition-all duration-300 ease-out font-battambang
+      hover:scale-105 hover:bg-lime-900 hover:shadow-2xl 
+      transition-all duration-300 ease-out font-moulpali
       flex items-center justify-center gap-2
       max-w-[280px]
     "
@@ -162,7 +168,7 @@ export default function ScanMoney() {
       text-sm sm:text-base font-bold uppercase tracking-wider
       rounded-full shadow-xl 
       hover:scale-105 hover:bg-gray-100 hover:shadow-2xl 
-      transition-all duration-300 ease-out font-battambang
+      transition-all duration-300 ease-out font-kangrey
       flex items-center gap-2 whitespace-nowrap
     "
   ><svg
@@ -192,7 +198,7 @@ export default function ScanMoney() {
       text-sm sm:text-base font-bold uppercase tracking-wider
       rounded-full shadow-xl 
       hover:scale-105 hover:bg-gray-100 hover:shadow-2xl 
-      transition-all duration-300 ease-out font-battambang animate-bounce
+      transition-all duration-300 ease-out font-kangrey animate-bounce
       flex items-center gap-2 whitespace-nowrap
     "
   >

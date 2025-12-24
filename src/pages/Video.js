@@ -46,9 +46,13 @@ export default function Video() {
     <div className="relative w-full h-screen bg-green-950 flex flex-col items-center justify-center text-center p-4 sm:p-6 overflow-hidden">
       {/* Blur only on desktop */}
       <div className="hidden md:block absolute inset-0 backdrop-blur-sm bg-white/5 z-0"></div>
-      <div className="absolute inset-0 bg-black/30 z-0"></div>
+      <div className="absolute inset-0 bg-black/60 z-0"></div>
 <Bubbles />
       <div className="relative z-10 flex flex-col items-center w-full max-w-4xl h-full justify-center gap-4">
+                
+        <h1 className="animate-fade-in-up text-3xl sm:text-3xl md:text-4xl lg:text-6xl text-white drop-shadow-lg mb-4 leading-tight font-moulpali">
+          វីដេអូអាពាហ៍ពិពាហ៍
+        </h1>
         {/* Responsive Video Container */}
         <div className="w-full h-[60%] sm:h-[65%] md:h-[70%] rounded-xl overflow-hidden shadow-lg">
           <iframe
@@ -81,7 +85,7 @@ export default function Video() {
       text-sm sm:text-base font-bold uppercase tracking-wider
       rounded-full shadow-xl 
       hover:scale-105 hover:bg-gray-100 hover:shadow-2xl 
-      transition-all duration-300 ease-out font-battambang
+      transition-all duration-300 ease-out font-kangrey
       flex items-center gap-2 whitespace-nowrap
     "
   ><svg
@@ -111,7 +115,7 @@ export default function Video() {
       text-sm sm:text-base font-bold uppercase tracking-wider
       rounded-full shadow-xl 
       hover:scale-105 hover:bg-gray-100 hover:shadow-2xl 
-      transition-all duration-300 ease-out font-battambang animate-bounce
+      transition-all duration-300 ease-out font-kangrey animate-bounce
       flex items-center gap-2 whitespace-nowrap
     "
   >

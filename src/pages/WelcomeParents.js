@@ -62,7 +62,7 @@ export default function WelcomeParents() {
       }}
     >
        <Bubbles />
-      <div className="absolute inset-0 bg-black/30 z-0"></div>
+      <div className="absolute inset-0 bg-black/60 z-0"></div>
       
       <div className="relative z-10 flex flex-col items-center w-full">
         
@@ -73,7 +73,7 @@ export default function WelcomeParents() {
 
   {/* Right Div */}
   <div className="text-center animate-fade-in-up">
-  <h2 className="whitespace-nowrap animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-green-900 sm:text-[#d5c243] md:text-[#d5c243] drop-shadow-lg mb-4 lg:mb-12 md:mb-12 leading-tight font-kh sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+  <h2 className="whitespace-nowrap animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-yellow-400 drop-shadow-lg mb-4 lg:mb-12 md:mb-12 leading-tight font-kh sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
   សិរីមង្គលអាពាហ៍ពិពាហ៍
   </h2>
   {/* Parents Section */}
@@ -81,10 +81,10 @@ export default function WelcomeParents() {
 
   {/* Left Div */}
   <div className="text-center animate-fade-in-up">
-    <h3 className="text-lg md:text-xl font-kh text-green-900 mb-2 sm:text-[#d5c243] md:text-[#d5c243] drop-shadow-lg sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+    <h3 className="text-lg md:text-xl font-kh text-[#d5c243] drop-shadow-lg sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] mb-2 sm:mb-4 md:mb-4">
       ឪពុកម្តាយ កូនប្រុស
     </h3>
-    <p className="font-battambang text-green-800 leading-relaxed sm:text-[#e7d996] md:text-[#e7d996] drop-shadow-lg mb-1 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+    <p className="font-battambang text-[#e7d996] leading-relaxed drop-shadow-lg mb-1 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
       លោក សន ស៊ីម
       <br />
       លោកស្រី តូច សាវី
@@ -93,10 +93,10 @@ export default function WelcomeParents() {
 
   {/* Right Div */}
   <div className="text-center animate-fade-in-up">
-    <h3 className="text-lg md:text-xl font-kh text-green-900 mb-2 sm:text-[#d5c243] md:text-[#d5c243] drop-shadow-lg sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+    <h3 className="text-lg md:text-xl font-kh text-[#d5c243] drop-shadow-lg sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] mb-2 sm:mb-4 md:mb-4">
       ឪពុកម្តាយ កូនស្រី
     </h3>
-    <p className="font-battambang text-green-800 leading-relaxed sm:text-[#e7d996] md:text-[#e7d996] drop-shadow-lg mb-1 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+    <p className="font-battambang text-[#e7d996] leading-relaxed drop-shadow-lg mb-1 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
       លោក រឿន វុទ្ធី
       <br />
       លោកស្រី ភន គន្ធា
@@ -104,13 +104,13 @@ export default function WelcomeParents() {
   </div>
 
 </div>
-<p className="animate-fade-in-up text-xl sm:text-2lg md:text-2xl   text-green-900 sm:text-white md:text-white sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] sm:mb-4 sm:px-4 md:mb-4 md:px-4 leading-relaxed font-kh">
+<p className="animate-fade-in-up text-xl sm:text-2lg md:text-2xl text-white sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] sm:mb-4 sm:px-4 md:mb-4 md:px-4 leading-relaxed font-moulpali mb-2">
           សូមគោរពអញ្ជើញ
         </p>
   {/* <p className="font-battambang text-green-900 sm:text-white md:text-white leading-relaxed drop-shadow-lg mb-8 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] shadow-white/80">
       ឯកឧត្តម លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា ចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ដើម្បីប្រសិទ្ធពរជ័យ សិរីសួស្តី ជ័យមង្គល ក្នុងពិធីរៀបអាពាហ៍ពិពាហ៍ កូនប្រុស កូនស្រី របស់យើងខ្ញុំ។
     </p> */}
-    <p className="font-battambang text-green-900 sm:text-white md:text-white leading-relaxed drop-shadow-lg mb-8 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] shadow-white/80 text-justify sm:text-left indent-[1em] sm:indent-0">
+    <p className="font-battambang text-white leading-relaxed drop-shadow-lg mb-8 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] shadow-white/80 text-justify sm:text-left indent-[1em] sm:indent-0">
   ឯកឧត្តម លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា ចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ដើម្បីប្រសិទ្ធពរជ័យ សិរីសួស្តី ជ័យមង្គល ក្នុងពិធីរៀបអាពាហ៍ពិពាហ៍ កូនប្រុស កូនស្រី របស់យើងខ្ញុំ។
 </p>
 
@@ -137,7 +137,7 @@ export default function WelcomeParents() {
       text-sm sm:text-base font-bold uppercase tracking-wider
       rounded-full shadow-xl 
       hover:scale-105 hover:bg-gray-100 hover:shadow-2xl 
-      transition-all duration-300 ease-out font-battambang
+      transition-all duration-300 ease-out font-kangrey
       flex items-center gap-2 whitespace-nowrap
     "
   ><svg
@@ -167,7 +167,7 @@ export default function WelcomeParents() {
       text-sm sm:text-base font-bold uppercase tracking-wider
       rounded-full shadow-xl 
       hover:scale-105 hover:bg-gray-100 hover:shadow-2xl 
-      transition-all duration-300 ease-out font-battambang animate-bounce
+      transition-all duration-300 ease-out font-kangrey animate-bounce
       flex items-center gap-2 whitespace-nowrap
     "
   >

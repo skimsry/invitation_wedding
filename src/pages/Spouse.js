@@ -63,11 +63,11 @@ export default function Spouse() {
       }}
     >
        <Bubbles />
-      <div className="absolute inset-0 bg-black/30 z-0"></div>
+      <div className="absolute inset-0 bg-black/60 z-0"></div>
       
       <div className="relative z-10 flex flex-col items-center w-full">
         
-        <h2 className="hidden sm:block animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-green-900 sm:text-[#d5c243] md:text-[#d5c243] drop-shadow-lg mb-8 lg:mb-12 md:mb-12 leading-tight font-kh sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+        <h2 className="hidden sm:block animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-yellow-400 drop-shadow-lg mb-8 lg:mb-12 md:mb-12 leading-tight font-kh sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
           សិរីមង្គលអាពាហ៍ពិពាហ៍
         </h2>
         <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6 sm:mb-10 sm:px-4 md:mb-10 md:px-4 mb-2 px-2">
@@ -88,11 +88,11 @@ export default function Spouse() {
   </div>
 
   {/* Text */}
- <h3 className="hidden sm:block text-sm sm:text-lg font-kh text-green-900 sm:text-[#d5c243] drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] mb-2">
+ <h3 className="hidden sm:block text-sm sm:text-lg font-kh text-[#d5c243] drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] mb-2 sm:mb-4 md:mb-4">
   កូនប្រុសនាម
 </h3>
 
-  <p className="text-lg md:text-xl font-kh text-green-800 leading-relaxed sm:text-[#e7d996] md:text-[#e7d996] drop-shadow-lg mb-2 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+  <p className="text-lg md:text-xl font-kh text-[#e7d996] leading-relaxed drop-shadow-lg mb-2 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
    សន គឹមស្រ៊ី
   </p>
 </div>
@@ -117,11 +117,11 @@ export default function Spouse() {
   </div>
 
   {/* Text */}
-  <h3 className="hidden sm:block text-sm sm:text-lg font-kh text-green-900 sm:text-[#d5c243] drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] mb-0.5">
+  <h3 className="hidden sm:block text-sm sm:text-lg font-kh text-[#d5c243] drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] mb-2 sm:mb-4 md:mb-4">
     កូនស្រីនាម
   </h3>
   
-  <p className="text-lg md:text-xl font-kh text-green-800 leading-relaxed sm:text-[#e7d996] md:text-[#e7d996] drop-shadow-lg mb-2 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+  <p className="text-lg md:text-xl font-kh text-[#e7d996] leading-relaxed drop-shadow-lg mb-2 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
    វុទ្ធី​ សុធារ័ត្ឋ
   </p>
 </div>
@@ -149,7 +149,7 @@ export default function Spouse() {
       text-sm sm:text-base font-bold uppercase tracking-wider
       rounded-full shadow-xl 
       hover:scale-105 hover:bg-gray-100 hover:shadow-2xl 
-      transition-all duration-300 ease-out font-battambang
+      transition-all duration-300 ease-out font-kangrey
       flex items-center gap-2 whitespace-nowrap
     "
   ><svg
@@ -179,7 +179,7 @@ export default function Spouse() {
       text-sm sm:text-base font-bold uppercase tracking-wider
       rounded-full shadow-xl 
       hover:scale-105 hover:bg-gray-100 hover:shadow-2xl 
-      transition-all duration-300 ease-out font-battambang animate-bounce
+      transition-all duration-300 ease-out font-kangrey animate-bounce
       flex items-center gap-2 whitespace-nowrap
     "
   >

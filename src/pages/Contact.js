@@ -1,5 +1,5 @@
 import bgcontact from "../assets/bgcontact.webp";
-import bgwelcomeMobile from "../assets/bgwelcome_contact_mobile.webp"; 
+import bgwelcomeMobile from "../assets/bgwelcome_contact_mobile.png"; 
 import Bubbles from "../components/Bubbles";
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -83,29 +83,36 @@ export default function Contact() {
         "--bg-desktop": `url(${bgcontact})`,
       }}
     >
-      <div className="hidden md:block absolute inset-0 backdrop-blur-sm bg-black/20 z-0" />
+      {/* <div className="hidden md:block absolute inset-0 backdrop-blur-sm bg-black/20 z-0" /> */}
       <Bubbles />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/30 z-0"></div>
+      <div className="absolute inset-0 bg-black/60 z-0"></div>
 
       <div className="relative z-10 flex flex-col items-center w-full max-w-5xl p-6 sm:p-12">
-        <h2 className="hidden md:block animate-fade-in-up text-3xl sm:text-4xl md:text-5xl font-kh text-[#d5c243] mb-6 drop-shadow-lg">
+        {/* <h2 className="hidden md:block animate-fade-in-up text-3xl sm:text-4xl md:text-5xl font-kh text-[#d5c243] mb-6 drop-shadow-lg">
           សិរីមង្គលអាពាហ៍ពិពាហ៍
-        </h2>
+        </h2> */}
 
         {/* <p className="animate-fade-in-up text-xl sm:text-2lg md:text-2xl text-green-900 sm:text-[#d5c243] md:text-[#d5c243] mb-4 px-4 leading-relaxed font-moulpali drop-shadow-lg">
           ទំនាក់ទំនង កម្មវិធី
         </p> */}
-        <p className="animate-fade-in-up text-xl sm:text-2xl md:text-3xl text-green-900 sm:text-[#d5c243] md:text-[#d5c243] mb-4 leading-relaxed font-moulpali drop-shadow-lg">
+        {/* <p className="animate-fade-in-up text-xl sm:text-2xl md:text-3xl text-green-900 sm:text-[#d5c243] md:text-[#d5c243] mb-4 leading-relaxed font-moulpali drop-shadow-lg">
   ទំនាក់ទំនង កម្មវិធី
-</p>
+</p> */}
+<h2 className="hidden sm:block animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-yellow-400 drop-shadow-lg mb-4 lg:mb-8 md:mb-8 leading-tight font-kh sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+  សិរីមង្គលអាពាហ៍ពិពាហ៍
+  </h2>
+  
+         <p className="sm:[-webkit-text-stroke:.1px_#000000] animate-fade-in-up text-xl sm:text-2lg md:text-3xl  text-white sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] mb-4 px-4 sm:mb-8 sm:px-8 md:mb-8 md:px-8 lg:mb-8 lg:px-8 leading-relaxed font-moulpali">
+          ទំនាក់ទំនងកម្មវិធី
+        </p>
 
 
         <div className="flex flex-col gap-6 w-full text-left pb-8">
   {contacts.map((item, idx) => (
     <div key={idx}>
-      <p className="animate-fade-in-up font-bold text-lg text-green-900 sm:text-[#d5c243] md:text-[#d5c243] mb-2 font-moulpali drop-shadow-lg">
+      <p className="animate-fade-in-up font-bold text-lg text-white mb-2 font-moulpali drop-shadow-lg">
         {item.label}:
       </p>
 
@@ -118,7 +125,7 @@ export default function Contact() {
                 href={`tel:${val.number}`}
                 className="text-white hover:text-[#d5c243] transition-colors font-battambang drop-shadow-lg"
               >
-                <span className="text-green-900 sm:text-[#d5c243] md:text-[#d5c243]">{val.name}</span>: {val.number}
+                <span className="text-[#d5c243]">{val.name}</span>: {val.number}
               </a>
             ) : (
               <a
@@ -129,7 +136,7 @@ export default function Contact() {
                 className="text-white hover:text-[#d5c243] transition-colors font-battambang drop-shadow-lg"
               >
                 
-                <span className="text-green-900 sm:text-[#d5c243] md:text-[#d5c243]">{val.name}</span>: {val.call}
+                <span className="text-[#d5c243]">{val.name}</span>: {val.call}
               </a>
             )
           )}
@@ -157,7 +164,7 @@ export default function Contact() {
       text-sm sm:text-base font-bold uppercase tracking-wider
       rounded-full shadow-xl 
       hover:scale-105 hover:bg-gray-100 hover:shadow-2xl 
-      transition-all duration-300 ease-out font-battambang
+      transition-all duration-300 ease-out font-kangrey
       flex items-center gap-2 whitespace-nowrap
     "
   ><svg
@@ -187,7 +194,7 @@ export default function Contact() {
       text-sm sm:text-base font-bold uppercase tracking-wider
       rounded-full shadow-xl 
       hover:scale-105 hover:bg-gray-100 hover:shadow-2xl 
-      transition-all duration-300 ease-out font-battambang animate-bounce
+      transition-all duration-300 ease-out font-kangrey animate-bounce
       flex items-center gap-2 whitespace-nowrap
     "
   >

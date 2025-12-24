@@ -1,5 +1,5 @@
 import bgwelcomespouse from "../assets/bgwelcome_spouse.webp";
-import bgwelcomeMobile from "../assets/bgwelcome_spouse2_mobile.webp"; 
+import bgwelcomeMobile from "../assets/bgwelcome_spouse2_mobile.png"; 
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import gb from "../assets/gb.png";
@@ -71,7 +71,7 @@ export default function WelcomeSpouse() {
        
 <div className="w-full grid grid-cols-1 md:grid-cols-2">
   <div className="text-center animate-fade-in-up">
-  <h2 className="whitespace-nowrap animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-green-900 sm:text-[#d5c243] md:text-[#d5c243] drop-shadow-lg mb-4 lg:mb-12 md:mb-12 leading-tight font-kh sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+  <h2 className="whitespace-nowrap animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-yellow-400 drop-shadow-lg mb-4 lg:mb-12 md:mb-12 leading-tight font-kh sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
   សិរីមង្គលអាពាហ៍ពិពាហ៍
   </h2>
   
@@ -80,12 +80,12 @@ export default function WelcomeSpouse() {
 
   {/* Left Div */}
   <div className="col-span-2 text-center animate-fade-in-up">
-    <h3 className="text-lg md:text-xl font-kh text-green-900 mb-2 sm:mb-4 md:mb-4 sm:text-[#d5c243] md:text-[#d5c243] drop-shadow-lg sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+    <h3 className="text-lg md:text-xl font-kh mb-2 sm:mb-4 md:mb-4 text-[#d5c243] drop-shadow-lg sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
       កូនប្រុសនាម
     </h3>
     
     {/* Mobile only */}
-<p className="text-lg font-kh text-green-800 leading-relaxed drop-shadow-lg mb-2 md:hidden">
+<p className="text-lg font-kh text-[#e7d996] leading-relaxed drop-shadow-lg mb-2 md:hidden">
   សន គឹមស្រ៊ី
 </p>
 
@@ -107,11 +107,11 @@ export default function WelcomeSpouse() {
 
   {/* Right Div */}
   <div className="col-span-2 text-center animate-fade-in-up">
-    <h3 className="text-lg md:text-xl font-kh text-green-900 sm:mb-4 md:mb-4 mb-2 sm:text-[#d5c243] md:text-[#d5c243] drop-shadow-lg sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+    <h3 className="text-lg md:text-xl font-kh text-[#d5c243] sm:mb-4 md:mb-4 mb-2 drop-shadow-lg sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
       កូនស្រីនាម
     </h3>
     {/* Mobile only */}
-<p className="text-lg font-kh text-green-800 leading-relaxed drop-shadow-lg mb-2 md:hidden">
+<p className="text-lg font-kh text-[#e7d996] leading-relaxed drop-shadow-lg mb-2 md:hidden">
   វុទ្ធី សុធារ័ត្ឋ
 </p>
 
@@ -127,24 +127,24 @@ export default function WelcomeSpouse() {
   </div>
 
 </div>
- <p className="font-battambang text-green-900 sm:text-white md:text-white leading-relaxed drop-shadow-lg mb-2 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] shadow-white/80">
+ <p className="font-battambang text-white leading-relaxed drop-shadow-lg mb-2 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] shadow-white/80">
       ដែលប្រព្រឹត្តទៅ
     </p>
-<p className="animate-fade-in-up text-lg sm:text-2lg md:text-2xl   text-green-900 sm:text-white md:text-white sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] sm:mb-4 sm:px-4 md:mb-4 md:px-4 leading-relaxed font-kh">
+<p className="animate-fade-in-up text-lg sm:text-2lg md:text-2xl  text-white sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] sm:mb-4 sm:px-4 md:mb-4 md:px-4 leading-relaxed font-kh">
           ថ្ងៃសៅរ៍ ទី២១ ខែកុម្ភៈ ឆ្នាំ២០២៦
         </p>
-        <p className="font-battambang text-green-900 sm:text-white md:text-white leading-relaxed drop-shadow-lg mb-2 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] shadow-white/80">
+        <p className="font-battambang text-white leading-relaxed drop-shadow-lg mb-2 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] shadow-white/80">
       ចាប់ពីម៉ោង៥ ល្ងាច
     </p>
   
 
-  <p className="md:hidden text-lg md:text-xl font-kh text-green-800 leading-relaxed sm:text-[#e7d996] md:text-[#e7d996] drop-shadow-lg mb-2 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+  <p className="md:hidden text-lg md:text-xl font-kh text-[#e7d996] leading-relaxed drop-shadow-lg mb-2 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
     នៅគេហដ្ឋានខាងស្រី ស្រុកកោះធំ 
   </p>
-  <p className="md:hidden text-lg md:text-xl font-kh text-green-800 leading-relaxed sm:text-[#e7d996] md:text-[#e7d996] drop-shadow-lg mb-1 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+  <p className="md:hidden text-lg md:text-xl font-kh text-[#e7d996] leading-relaxed drop-shadow-lg mb-1 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
     (ស្ពានទី៤៦ ក្បែរវត្តតាដួង)
   </p>
-  <p className="hidden md:block text-lg md:text-xl font-kh text-green-800 leading-relaxed sm:text-[#e7d996] md:text-[#e7d996] drop-shadow-lg mb-1 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+  <p className="hidden md:block text-lg md:text-xl font-kh text-[#e7d996] leading-relaxed drop-shadow-lg mb-1 sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
     នៅគេហដ្ឋានខាងស្រី ស្រុកកោះធំ (ស្ពានទី៤៦ ក្បែរវត្តតាដួង)
   </p>
 
@@ -157,11 +157,11 @@ export default function WelcomeSpouse() {
     rel="noopener noreferrer"
     className="
       px-4 py-3
-      bg-white text-green-900 
+      bg-lime-950 text-yellow-400 
       text-sm sm:text-base font-bold uppercase tracking-wider
       rounded-full shadow-xl 
-      hover:scale-105 hover:bg-gray-100 hover:shadow-2xl 
-      transition-all duration-300 ease-out font-battambang
+      hover:scale-105 hover:bg-lime-900 hover:shadow-2xl 
+      transition-all duration-300 ease-out font-moulpali
       flex items-center justify-center gap-2
       max-w-[280px]
     "
@@ -191,7 +191,7 @@ export default function WelcomeSpouse() {
       text-sm sm:text-base font-bold uppercase tracking-wider
       rounded-full shadow-xl 
       hover:scale-105 hover:bg-gray-100 hover:shadow-2xl 
-      transition-all duration-300 ease-out font-battambang
+      transition-all duration-300 ease-out font-kangrey
       flex items-center gap-2 whitespace-nowrap
     "
   ><svg
@@ -221,7 +221,7 @@ export default function WelcomeSpouse() {
       text-sm sm:text-base font-bold uppercase tracking-wider
       rounded-full shadow-xl 
       hover:scale-105 hover:bg-gray-100 hover:shadow-2xl 
-      transition-all duration-300 ease-out font-battambang animate-bounce
+      transition-all duration-300 ease-out font-kangrey animate-bounce
       flex items-center gap-2 whitespace-nowrap
     "
   >

@@ -95,14 +95,15 @@ export default function Gallery() {
       <Bubbles />
       {/* Blur only on desktop */}
       <div className="hidden md:block absolute inset-0 backdrop-blur-sm bg-white/5 z-0"></div>
-      <div className="absolute inset-0 bg-black/30 z-0"></div>
+      <div className="absolute inset-0 bg-black/60 z-0"></div>
 
       <div className="relative z-10 flex flex-col items-center w-full">
         {/* Titles */}
-        <h2 className="animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-[#d5c243] drop-shadow-lg mb-4 lg:mb-12 md:mb-12 leading-tight font-kh">
+        <h2 className="animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-yellow-400 drop-shadow-lg mb-4 lg:mb-12 md:mb-12 leading-tight font-kh">
           សិរីមង្គលអាពាហ៍ពិពាហ៍
         </h2>
-        <h1 className="animate-fade-in-up text-3xl sm:text-3xl md:text-4xl lg:text-6xl text-[#d5c243] drop-shadow-lg mb-8 sm:mb-12 md:mb-12 lg:mb-12 leading-tight font-moulpali">
+        
+        <h1 className="animate-fade-in-up text-3xl sm:text-3xl md:text-4xl lg:text-6xl text-white drop-shadow-lg mb-8 sm:mb-12 md:mb-12 lg:mb-12 leading-tight font-moulpali">
           វិចិត្រសាល
         </h1>
 
@@ -152,7 +153,7 @@ export default function Gallery() {
       text-sm sm:text-base font-bold uppercase tracking-wider
       rounded-full shadow-xl 
       hover:scale-105 hover:bg-gray-100 hover:shadow-2xl 
-      transition-all duration-300 ease-out font-battambang
+      transition-all duration-300 ease-out font-kangrey
       flex items-center gap-2 whitespace-nowrap
     "
   ><svg
@@ -182,7 +183,7 @@ export default function Gallery() {
       text-sm sm:text-base font-bold uppercase tracking-wider
       rounded-full shadow-xl 
       hover:scale-105 hover:bg-gray-100 hover:shadow-2xl 
-      transition-all duration-300 ease-out font-battambang animate-bounce
+      transition-all duration-300 ease-out font-kangrey animate-bounce
       flex items-center gap-2 whitespace-nowrap
     "
   >

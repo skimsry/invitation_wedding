@@ -103,9 +103,8 @@ export default function Welcome() {
         "--bg-desktop": `url(${bgwelcome})`,
       }}
     >
-
-
-      {/* <div className="absolute inset-0 bg-black/65 md:bg-black/65 lg:bg-black/65 z-0"></div> */}
+    
+      
       <Bubbles />
       <div className="absolute inset-0 bg-black/60 z-0"></div>
 

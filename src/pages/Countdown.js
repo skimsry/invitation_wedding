@@ -1,7 +1,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import bgcountdate from "../assets/bgcountdate.webp";
-import bgwelcomeMobile from "../assets/mobile_bg.webp";
+import bgwelcomeMobile from "../assets/mobile_bg2.png";
 import { Link, useNavigate } from "react-router-dom";
 import Bubbles from "../components/Bubbles";
 
@@ -120,7 +120,7 @@ const [countDownTime, setCountDownTIme] = useState({
       }}
     >
       <Bubbles />
-      <div className="absolute inset-0 bg-black/30 z-0"></div>
+      <div className="absolute inset-0 bg-black/60 z-0"></div>
       
       <div className="relative z-10 flex flex-col items-center w-full">
         
@@ -129,14 +129,28 @@ const [countDownTime, setCountDownTIme] = useState({
                   
    {/* Mobile only */}
   <span className="block sm:hidden">
-    រាប់ថយក្រោយ ថ្ងៃមង្គលការ
+    <h2 className="animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-yellow-400 drop-shadow-lg mb-4 lg:mb-8 md:mb-8 leading-tight font-kh sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+  សិរីមង្គលអាពាហ៍ពិពាហ៍
+  </h2>
+  
+         <p className="sm:[-webkit-text-stroke:.1px_#000000] animate-fade-in-up text-xl sm:text-2lg md:text-3xl  text-white sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] mb-4 px-4 sm:mb-8 sm:px-8 md:mb-8 md:px-8 lg:mb-8 lg:px-8 leading-relaxed font-moulpali">
+         រាប់ថយក្រោយ ថ្ងៃមង្គលការ
+        </p>
+    
   </span>
 
   {/* Tablet & up */}
   <span className="hidden sm:block">
-    <h2 className="hidden sm:block animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-green-900 sm:text-[#d5c243] md:text-[#d5c243] drop-shadow-lg mb-4 leading-tight font-kh sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+    <h2 className="animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-yellow-400 drop-shadow-lg mb-4 lg:mb-8 md:mb-8 leading-tight font-kh sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+  សិរីមង្គលអាពាហ៍ពិពាហ៍
+  </h2>
+  
+         <p className="sm:[-webkit-text-stroke:.1px_#000000] animate-fade-in-up text-xl sm:text-2lg md:text-3xl  text-white sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] mb-4 px-4 sm:mb-8 sm:px-8 md:mb-8 md:px-8 lg:mb-8 lg:px-8 leading-relaxed font-moulpali">
           រាប់ថយក្រោយ ទៅកាន់ថ្ងៃមង្គលការ
-        </h2>
+        </p>
+    {/* <h2 className="hidden sm:block animate-fade-in-up text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-green-900 sm:text-[#d5c243] md:text-[#d5c243] drop-shadow-lg mb-4 leading-tight font-kh sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+          រាប់ថយក្រោយ ទៅកាន់ថ្ងៃមង្គលការ
+        </h2> */}
     
   </span>
         </h2>
@@ -145,7 +159,7 @@ const [countDownTime, setCountDownTIme] = useState({
           <div className="flex flex-col gap-5 relative">
             <div className="h-16 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center bg-[#343650] rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full bg-[#191A24]"></div>
-              <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-[#a5b4fc]">
+              <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-white">
                 {countDownTime?.days}
               </span>
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 -right-[6px] rounded-full bg-[#191A24]"></div>
@@ -157,7 +171,7 @@ const [countDownTime, setCountDownTIme] = useState({
           <div className="flex flex-col gap-5 relative">
             <div className="h-16 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center bg-[#343650] rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full bg-[#191A24]"></div>
-              <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-[#a5b4fc]">
+              <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-white">
                 {countDownTime?.hours}
               </span>
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 -right-[6px] rounded-full bg-[#191A24]"></div>
@@ -169,7 +183,7 @@ const [countDownTime, setCountDownTIme] = useState({
           <div className="flex flex-col gap-5 relative">
             <div className="h-16 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center bg-[#343650] rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full bg-[#191A24]"></div>
-              <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-[#a5b4fc]">
+              <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-white">
                 {countDownTime?.minutes}
               </span>
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 -right-[6px] rounded-full bg-[#191A24]"></div>
@@ -181,7 +195,7 @@ const [countDownTime, setCountDownTIme] = useState({
           <div className="flex flex-col gap-5 relative">
             <div className="h-16 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center bg-[#343650] rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full bg-[#191A24]"></div>
-              <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-[#a5b4fc]">
+              <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-white">
                 {countDownTime?.seconds}
               </span>
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 -right-[6px] rounded-full bg-[#191A24]"></div>
@@ -215,7 +229,7 @@ const [countDownTime, setCountDownTIme] = useState({
       text-sm sm:text-base font-bold uppercase tracking-wider
       rounded-full shadow-xl 
       hover:scale-105 hover:bg-gray-100 hover:shadow-2xl 
-      transition-all duration-300 ease-out font-battambang
+      transition-all duration-300 ease-out font-kangrey
       flex items-center gap-2 whitespace-nowrap
     "
   ><svg
@@ -245,7 +259,7 @@ const [countDownTime, setCountDownTIme] = useState({
       text-sm sm:text-base font-bold uppercase tracking-wider
       rounded-full shadow-xl 
       hover:scale-105 hover:bg-gray-100 hover:shadow-2xl 
-      transition-all duration-300 ease-out font-battambang animate-bounce
+      transition-all duration-300 ease-out font-kangrey animate-bounce
       flex items-center gap-2 whitespace-nowrap
     "
   >
