@@ -133,7 +133,7 @@ export default function Contact() {
     ពិធីកាត់សក់បង្កក់សិរី
   </dd>
 </dl>
-<div className="block md:hidden">
+<div className="block sm:hidden">
   <dl>
     <dt className="text-left font-battambang font-bold italic text-green-800 leading-relaxed drop-shadow-lg mb-1">
       ម៉ោង ១១:១៥ ព្រឹក

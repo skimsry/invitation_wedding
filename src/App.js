@@ -13,14 +13,13 @@ import Map from './pages/Map';
 import Contact from './pages/Contact';
 import List from './pages/List';
 import Thanks from './pages/Thanks';
-// import ScrollNavigation from './pages/ScrollNavigation';
-export default function App() {
+export default function App() {  
 return (   
     <>
       <BackgroundMusic /> 
     <Routes>
         <Route path="/" element={<Welcome />} />
-        {/* <Route path="/" element={<ScrollNavigation />} /> */}
+        {/* <Route path="/:code" element={<Welcome />} /> */}
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/date" element={<WeddingDate />} />
         <Route path="/countdown" element={<Countdown />} />

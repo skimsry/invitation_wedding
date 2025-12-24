@@ -19,6 +19,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Kangrey';
+  src: url('./assets/fonts/Kh-Kangrey.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .font-kh{
     font-family: 'KhmerOSMuolLight';
 }
@@ -29,4 +36,8 @@
 
 .font-battambang{
     font-family: 'Khmer OS Battambang';
+}
+
+.font-kangrey{
+    font-family: 'Kangrey';
 }

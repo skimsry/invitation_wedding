@@ -117,8 +117,8 @@ export default function BackgroundMusic() {
       className="
         fixed bottom-4 right-4 z-[9999]
         p-3 rounded-full
-        bg-blue-600 text-white shadow-xl
-        hover:bg-blue-700
+        bg-lime-950 text-yellow-400 shadow-xl
+        hover:bg-lime-900
       "
     >
       {isPlaying ? (
