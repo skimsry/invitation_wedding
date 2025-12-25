@@ -73,7 +73,6 @@ export default function Thanks() {
 
   
     <p className="
-  
   font-battambang
   text-white
   leading-relaxed
@@ -81,7 +80,9 @@ export default function Thanks() {
   sm:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]
   md:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]
   shadow-white/80
-  
+
+  text-justify        /* mobile: justify */
+  sm:text-left        /* tablet and up: left align */
   indent-[2em]
 ">
   យើងខ្ញុំសូមថ្លែងអំណរគុណយ៉ាងជ្រាលជ្រៅចំពោះការអញ្ជើញចូលរួមជា ភ្ញៀវកិត្តិយស ក្នុងពិធីមង្គលការរបស់យើងខ្ញុំ ។ យើងខ្ញុំសូមអភ័យទោស ដោយពុំបានជួបអញ្ជើញដោយផ្ទាល់ ឬការសរសេរឈ្មោះរបស់ភ្ញៀវកិត្តិយសមិនបានត្រឹមត្រូវ ឬពុំបានសរសេរឈ្មោះ ។ យើងខ្ញុំសូមគោរពជូនពរជ័យ ឯកឧត្តម លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា និងភ្ញៀវកិត្តិយសទាំងអស់មានសុខភាពល្អ និងទទួលបានភាពជោគជ័យគ្រប់ភារកិច្ច ។ សូមអរគុណ !
