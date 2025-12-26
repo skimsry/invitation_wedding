@@ -15,7 +15,7 @@ export default function Welcome() {
   
 
   useEffect(() => {
-  if (!code) return; // don’t fetch if code is undefined
+  if (!code) return; 
 
   setLoading(true);
 
@@ -152,7 +152,7 @@ export default function Welcome() {
     animate-fade-in-up
     sm:text-xl md:text-xl lg:text-2xl
     text-yellow-400
-    mb-8 lg:mb-2 md:mb-2
+    mb-8 lg:mb-8 md:mb-8
     leading-tight font-kh
     ${person?.stext || ""}
   `}
