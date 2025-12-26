@@ -39,17 +39,9 @@ export default function Welcome() {
   // Save code to localStorage
   localStorage.setItem("inviteCode", code);
 
-}, [code]); // API_URL doesn’t need to be here
+}, [code]); 
 
-// const handleSaveToLocal = () => {
-//   const path = window.location.pathname; 
-//   const inviteCode = path.split('/').pop(); 
 
-//   if (inviteCode) {
-//     localStorage.setItem("inviteCode", inviteCode);
-//     console.log("Extracted and saved:", inviteCode);
-//   }
-// };
 
   if (loading) return (<div className="text-center pt-16">
   <div role="status">
@@ -150,19 +142,24 @@ export default function Welcome() {
         
         
         {/* <h2 className="sm:drop-shadow-[0_2px_3px_rgba(0,0,0,0.8)]
-  animate-fade-in-up text-xl sm:text-xl md:text-xl lg:text-2xl text-yellow-400 mb-8 lg:mb-12 md:mb-12 leading-tight font-kh">
-          <Typewriter text="លោក វរសេនីយ៍ត្រី សន គឹមស្រ៊ី" speed={90} delay={800} />
+  animate-fade-in-up text-base sm:text-xl md:text-xl lg:text-2xl text-yellow-400 mb-8 lg:mb-12 md:mb-12 leading-tight font-kh">
+          <Typewriter text="លោក វរសេនីយ៍ត្រី សន គឹមស្រ៊ី និងភរិយា" speed={90} delay={800} />
         </h2> */}
 
+<h2 className="sm:drop-shadow-[0_2px_3px_rgba(0,0,0,0.8)]
+  animate-fade-in-up text-base sm:text-xl md:text-xl lg:text-2xl text-yellow-400 mb-8 lg:mb-2 md:mb-2 leading-tight font-kh">
+          <Typewriter text={person.name} speed={90} delay={800} />
+        </h2>
 
-        <h2 className="sm:drop-shadow-[0_2px_3px_rgba(0,0,0,0.8)]
+
+        {/* <h2 className="sm:drop-shadow-[0_2px_3px_rgba(0,0,0,0.8)]
   animate-fade-in-up text-xl sm:text-xl md:text-xl lg:text-2xl text-yellow-400 mb-4 lg:mb-2 md:mb-2 leading-tight font-kh">
           <Typewriter text={person.name} speed={90} delay={800} />
         </h2>
 <h2 className="sm:drop-shadow-[0_2px_3px_rgba(0,0,0,0.8)]
   animate-fade-in-up text-xl sm:text-xl md:text-xl lg:text-2xl text-yellow-400 mb-8 lg:mb-8 md:mb-8 leading-tight font-kh">
           <Typewriter text={person.adname} speed={90} delay={800} />
-        </h2>
+        </h2> */}
         <Link
   to="/welcomespouse"
   // onClick={handleSaveToLocal}

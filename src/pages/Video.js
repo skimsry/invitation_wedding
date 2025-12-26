@@ -57,7 +57,7 @@ export default function Video() {
         <div className="w-full h-[60%] sm:h-[65%] md:h-[70%] rounded-xl overflow-hidden shadow-lg">
           <iframe
             className="w-full h-full rounded-xl border-2 border-gray-300"
-            src="https://www.youtube.com/embed/sAYEYy3zYDY"
+            src="https://www.youtube.com/embed/ui013nm6J0o?si=4KNGN0lNis1olOe8"
             title="YouTube video"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
