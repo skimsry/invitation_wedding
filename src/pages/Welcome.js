@@ -147,7 +147,7 @@ export default function Welcome() {
         </h2> */}
 
 <h2 className="sm:drop-shadow-[0_2px_3px_rgba(0,0,0,0.8)]
-  animate-fade-in-up text-base sm:text-xl md:text-xl lg:text-2xl text-yellow-400 mb-8 lg:mb-2 md:mb-2 leading-tight font-kh">
+  animate-fade-in-up text-lg sm:text-xl md:text-xl lg:text-2xl text-yellow-400 mb-8 lg:mb-2 md:mb-2 leading-tight font-kh">
           <Typewriter text={person.name} speed={90} delay={800} />
         </h2>
 
