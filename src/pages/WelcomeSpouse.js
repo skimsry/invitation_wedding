@@ -7,6 +7,7 @@ import Bubbles from "../components/Bubbles";
 
 
 export default function WelcomeSpouse() {
+  const inviteCode = localStorage.getItem("inviteCode");
   // const navigate = useNavigate();
 
   // useEffect(() => {
@@ -184,7 +185,7 @@ export default function WelcomeSpouse() {
 
 <div className="flex justify-center gap-4">
   <Link
-    to="/"
+    to={`/${inviteCode}`}
     className="
       px-8 py-3 
       bg-white text-green-900 

@@ -18,8 +18,8 @@ return (
     <>
       <BackgroundMusic /> 
     <Routes>
-        <Route path="/" element={<Welcome />} />
-        {/* <Route path="/:code" element={<Welcome />} /> */}
+        {/* <Route path="/" element={<Welcome />} /> */}
+        <Route path="/:code" element={<Welcome />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/date" element={<WeddingDate />} />
         <Route path="/countdown" element={<Countdown />} />

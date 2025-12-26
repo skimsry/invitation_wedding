@@ -5,6 +5,7 @@ import Bubbles from "../components/Bubbles";
 import male from "../assets/thank.png";
 
 export default function Thanks() {
+  const inviteCode = localStorage.getItem("inviteCode");
   return (
     <div
       className="
@@ -123,7 +124,7 @@ export default function Thanks() {
     
   </Link>
   <Link
-    to="/"
+    to={`/${inviteCode}`}
     className="
       px-8 py-3 
       bg-white text-green-900 
