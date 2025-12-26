@@ -146,10 +146,20 @@ export default function Welcome() {
           <Typewriter text="លោក វរសេនីយ៍ត្រី សន គឹមស្រ៊ី និងភរិយា" speed={90} delay={800} />
         </h2> */}
 
-<h2 className="sm:drop-shadow-[0_2px_3px_rgba(0,0,0,0.8)]
-  animate-fade-in-up text-lg sm:text-xl md:text-xl lg:text-2xl text-yellow-400 mb-8 lg:mb-2 md:mb-2 leading-tight font-kh">
-          <Typewriter text={person.name} speed={90} delay={800} />
-        </h2>
+<h2
+  className={`
+    sm:drop-shadow-[0_2px_3px_rgba(0,0,0,0.8)]
+    animate-fade-in-up
+    sm:text-xl md:text-xl lg:text-2xl
+    text-yellow-400
+    mb-8 lg:mb-2 md:mb-2
+    leading-tight font-kh
+    ${person?.stext || ""}
+  `}
+>
+  <Typewriter text={person.name} speed={90} delay={800} />
+</h2>
+
 
 
         {/* <h2 className="sm:drop-shadow-[0_2px_3px_rgba(0,0,0,0.8)]
@@ -203,12 +213,13 @@ export default function Welcome() {
 // import { useState, useEffect } from 'react';
 
 // export default function Welcome() {
+//   const API_URL = process.env.REACT_APP_API_URL;
 //   const [items, setItems] = useState([]);
-//   const [formData, setFormData] = useState({ code: '', name: '', adname: '' });
+//   const [formData, setFormData] = useState({ code: '', name: '', adname: '', stext: '' });
 
 //   // 1. Fetch existing items from MongoDB on load
 //   const fetchItems = async () => {
-//     const response = await fetch('http://localhost:5000/api/items');
+//     const response = await fetch(`${API_URL}/api/items`);
 //     const data = await response.json();
 //     setItems(data);
 //   };
@@ -221,13 +232,13 @@ export default function Welcome() {
 //   const handleSubmit = async (e) => {
 //     e.preventDefault();
     
-//     await fetch('http://localhost:5000/api/items', {
+//     await fetch(`${API_URL}/api/items`, {
 //       method: 'POST',
 //       headers: { 'Content-Type': 'application/json' },
 //       body: JSON.stringify(formData),
 //     });
 
-//     setFormData({ code: '', name: '', adname: '' }); // Clear form
+//     setFormData({ code: '', name: '', adname: '', stext: '' }); // Clear form
 //     fetchItems(); // Refresh list
 //   };
 
@@ -256,6 +267,13 @@ export default function Welcome() {
 //           placeholder="adname" 
 //           value={formData.adname}
 //           onChange={(e) => setFormData({...formData, adname: e.target.value})}
+           
+//         />
+//         <input 
+//           type="text" 
+//           placeholder="stext" 
+//           value={formData.stext}
+//           onChange={(e) => setFormData({...formData, stext: e.target.value})}
 //           required 
 //         />
 //         <button type="submit">Add to MongoDB</button>
