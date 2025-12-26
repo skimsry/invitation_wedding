@@ -286,7 +286,7 @@ export default function Welcome() {
 //       <ul>
 //         {items.map((item) => (
 //           <li key={item._id}>
-//             <strong>{item.code}:</strong> {item.name} {item.adname}
+//             <strong>{item.code}:</strong> {item.name} {item.adname} {item.stext}
 //           </li>
 //         ))}
 //       </ul>
