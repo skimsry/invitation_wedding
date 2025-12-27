@@ -1,0 +1,15 @@
+# Simulated requests to keep your Render service awake
+name: Render keep-alive ping
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # Run every 10 minutes (UTC)
+  workflow_dispatch:        # Allow manual run from GitHub UI
+
+jobs:
+  curl-website:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Ping Render service
+        run: curl -fsS https://invitation-wedding-backend.onrender.com || true
