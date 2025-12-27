@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Welcome from './pages/Welcome';
+import Welcome2 from './pages/Welcome2';
 import Gallery from './pages/Gallery';
 import WeddingDate from './pages/WeddingDate';
 import Countdown from './pages/Countdown';
@@ -20,6 +21,7 @@ return (
     <Routes>
         {/* <Route path="/" element={<Welcome />} /> */}
         <Route path="/:code" element={<Welcome />} />
+        <Route path="/" element={<Welcome2 />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/date" element={<WeddingDate />} />
         <Route path="/countdown" element={<Countdown />} />
