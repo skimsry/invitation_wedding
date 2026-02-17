@@ -94,7 +94,7 @@ const [countDownTime, setCountDownTIme] = useState({
   };
   const startCountDown = useCallback(() => {
   // Target date: 21 February 2026 (00:00:00)
-  const countDownDate = new Date(2026, 1, 21, 0, 0, 0); // month is 0-based (1 = Feb)
+  const countDownDate = new Date(2026, 1, 21, 17, 0, 0); // month is 0-based (1 = Feb)
 
   setInterval(() => {
     getTimeDifference(countDownDate.getTime());
