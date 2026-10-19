@@ -14,14 +14,20 @@ import Map from './pages/Map';
 import Contact from './pages/Contact';
 import List from './pages/List';
 import Thanks from './pages/Thanks';
+import Admin from './pages/Admin';
+
 export default function App() {  
-return (   
+  return (   
     <>
       <BackgroundMusic /> 
-    <Routes>
-        {/* <Route path="/" element={<Welcome />} /> */}
-        <Route path="/" element={<Welcome2 />} />
-        <Route path="/:code" element={<Welcome />} />        
+      <Routes>
+        {/* Core and Admin Routes */}
+        <Route path="/" element={<Welcome />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/manage" element={<Admin />} />
+        <Route path="/welcome2" element={<Welcome2 />} />
+
+        {/* Wedding Content Routes */}
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/date" element={<WeddingDate />} />
         <Route path="/countdown" element={<Countdown />} />
@@ -35,7 +41,11 @@ return (
         <Route path="/contact" element={<Contact />} /> 
         <Route path="/list" element={<List />} /> 
         <Route path="/thanks" element={<Thanks />} /> 
-    </Routes>  
+
+        {/* Dynamic Personalized Invitation Routes */}
+        <Route path="/invitation/:code" element={<Welcome />} />
+        <Route path="/:code" element={<Welcome />} /> 
+      </Routes>  
     </> 
-);
+  );
 }
